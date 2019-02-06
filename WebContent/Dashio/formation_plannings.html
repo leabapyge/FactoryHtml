@@ -8,7 +8,7 @@
 <meta name="author" content="Dashboard">
 <meta name="keyword"
 	content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
-<title>The Factory - matieres</title>
+<title>Plannings des formations</title>
 
 <!-- Favicons -->
 <link href="img/favicon.png" rel="icon">
@@ -62,24 +62,27 @@
 							class="fa fa-edit"></i> <span>Mise à jour profil</span>
 					</a>
 						<ul class="sub">
-							<li><a href="info_persos_form.html">Informations
-									personelles</a></li>
-							<li><a href="adresse_form.html">Adresse</a></li>
-							<li><a href="coordonnees_form.html">Coordonnées</a></li>
-							<li><a href="matieres.html">Matières</a></li>
+							<li><a href="info_persos.html">Informations personelles</a></li>
+							<li><a href="adresse.html">Adresse</a></li>
+							<li><a href="coordonnees.html">Coordonnées</a></li>
 						</ul></li>
 					<li class="sub-menu"><a href="javascript:;"> <i
-							class="fa fa-calendar-o"></i> <span>Disponibilités</span>
+							class="fa fa-wrench"></i> <span>Gestion du materiel</span>
 					</a>
 						<ul class="sub">
-							<li><a href="disponibilites.html">Mise à jour</a></li>
+							<li><a href="salle.html">Salles</a></li>
+							<li><a href="ordinateur.html">Ordinateurs</a></li>
+							<li><a href="video_proj.html">Video projecteurs</a></li>
 						</ul></li>
 					<li class="sub-menu"><a href="javascript:;"> <i
-							class="fa fa-calendar"></i> <span>Planning</span>
+							class="fa fa-calendar"></i> <span>Consultation Plannings</span>
 					</a>
 						<ul class="sub">
-							<li><a href="planning_formateur.html">Affichage planning</a></li>
+							<li><a href="formation_plannings.html">Formations Java </a></li>
+							<li><a href="formation_plannings.html">Formations Hotellerie</a></li>
+							<li><a href="formation_plannings.html">Formations Business</a></li>
 						</ul></li>
+
 
 				</ul>
 
@@ -100,9 +103,29 @@
 				</div>
 
 				<!--               *************************************************************************************************************************** -->
-				matieres
+				<div class="col-lg-3 ds">
+					<!-- CALENDAR-->
+					<div id="calendar" class="mb">
+						<div class="panel green-panel no-margin">
+							<div class="panel-body">
+								<div id="date-popover" class="popover top"
+									style="cursor: pointer; disadding: block; margin-left: 33%; margin-top: -50px; width: 175px;">
+									<div class="arrow"></div>
+									<h3 class="popover-title" style="disadding: none;"></h3>
+									<div id="date-popover-content" class="popover-content"></div>
+								</div>
+								<div id="my-calendar"></div>
+							</div>
+						</div>
+					</div>
+					<!-- / calendar -->
+				</div>
+				<!-- /col-lg-3 -->
+				</div>
+				<!-- /row -->
 			</section>
 		</section>
+		<!--main content end-->
 
 	</section>
 	<!-- js placed at the end of the document so the pages load faster -->
@@ -130,7 +153,6 @@
 		
 		
 		
-		
     $(document).ready(function() {
       $("#date-popover").popover({
         html: true,
@@ -141,6 +163,19 @@
         $(this).hide();
       });
 
+      $("#my-calendar").zabuto_calendar({
+        action: function() {
+          return myDateFunction(this.id, false);
+        },
+        action_nav: function() {
+          return myNavFunction(this.id);
+        },
+        ajax: {
+          url: "show_data.php?action=1",
+          modal: true
+        },
+      });
+    });
 
     function myNavFunction(id) {
       $("#date-popover").hide();
@@ -149,6 +184,10 @@
       console.log('nav ' + nav + ' to: ' + to.month + '/' + to.year);
     }
   
+	
+	
+	
+	
 	
 	
 	
