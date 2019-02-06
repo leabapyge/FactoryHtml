@@ -62,24 +62,25 @@
 							class="fa fa-edit"></i> <span>Mise à jour profil</span>
 					</a>
 						<ul class="sub">
-							<li><a href="info_persos_form.html">Informations
-									personelles</a></li>
-							<li><a href="adresse_form.html">Adresse</a></li>
-							<li><a href="coordonnees_form.html">Coordonnées</a></li>
-							<li><a href="matieres.html">Matières</a></li>
+							<li><a href="info_persos.html">Informations personelles</a></li>
 						</ul></li>
 					<li class="sub-menu"><a href="javascript:;"> <i
-							class="fa fa-calendar-o"></i> <span>Disponibilités</span>
+							class="fa fa-wrench"></i> <span>Gestion du materiel</span>
 					</a>
 						<ul class="sub">
-							<li><a href="disponibilites.html">Mise à jour</a></li>
+							<li><a href="salle.html">Salles</a></li>
+							<li><a href="ordinateur.html">Ordinateurs</a></li>
+							<li><a href="video_proj.html">Video projecteurs</a></li>
 						</ul></li>
 					<li class="sub-menu"><a href="javascript:;"> <i
-							class="fa fa-calendar"></i> <span>Planning</span>
+							class="fa fa-calendar"></i> <span>Consultation Plannings</span>
 					</a>
 						<ul class="sub">
-							<li><a href="planning_formateur.html">Affichage planning</a></li>
+							<li><a href="formation_plannings.html">Formations Java </a></li>
+							<li><a href="formation_plannings.html">Formations Hotellerie</a></li>
+							<li><a href="formation_plannings.html">Formations Business</a></li>
 						</ul></li>
+
 
 				</ul>
 
@@ -100,7 +101,87 @@
 				</div>
 
 				<!--               *************************************************************************************************************************** -->
-				info_persos
+
+				<h4>Modification de vos informations personnelles</h4>
+
+				<div class="row mt">
+					<div class="col-lg-12">
+						<div class="form-panel">
+							<form class="form-horizontal style-form" method="get">
+								<div class="form-group">
+									<label class="col-sm-2 col-sm-2 control-label">Nom</label>
+									<div class="col-sm-10">
+										<input type="text" class="form-control"
+											placeholder="NomPersonne">
+										<!--Attention NICO !:!!!!!! a la place des place holders, mets du property binding avec le vrai nom de la personne correspondante!!! -->
+									</div>
+								</div>
+								<div class="form-group">
+									<label class="col-sm-2 col-sm-2 control-label">Prenom</label>
+									<div class="col-sm-10">
+										<input type="text" class="form-control"
+											placeholder="PrenomPersonne">
+									</div>
+								</div>
+								<br> <span class="form-group"> <label
+									class="col-sm-2 col-sm-2 control-label">Adresse</label>
+								</span>
+								<div class="form-group">
+									<label class="col-sm-2 col-sm-2 control-label">N°</label>
+									<div class="col-sm-10">
+										<input type="text" class="form-control"
+											placeholder="Numero de rue">
+									</div>
+								</div>
+								<div class="form-group">
+									<label class="col-sm-2 col-sm-2 control-label">rue</label>
+									<div class="col-sm-10">
+										<input type="text" class="form-control"
+											placeholder="Nom de rue">
+									</div>
+								</div>
+								<div class="form-group">
+									<label class="col-sm-2 col-sm-2 control-label">Code
+										postal</label>
+									<div class="col-sm-10">
+										<input type="text" class="form-control"
+											placeholder="Code postal">
+									</div>
+								</div>
+								<div class="form-group">
+									<label class="col-sm-2 col-sm-2 control-label">Ville</label>
+									<div class="col-sm-10">
+										<input type="text" class="form-control" placeholder="Ville">
+									</div>
+								</div>
+								<div class="form-group">
+									<label class="col-sm-2 col-sm-2 control-label">Pays</label>
+									<div class="col-sm-10">
+										<input type="text" class="form-control" placeholder="Pays">
+									</div>
+								</div>
+								<br> <span class="form-group"> <label
+									class="col-sm-2 col-sm-2 control-label">Coordonnées</label>
+								</span>
+								<div class="form-group">
+									<label class="col-sm-2 col-sm-2 control-label">Telephone</label>
+									<div class="col-sm-10">
+										<input type="text" class="form-control"
+											placeholder="Telephone">
+									</div>
+								</div>
+								<div class="form-group">
+									<label class="col-sm-2 col-sm-2 control-label">Adresse
+										email</label>
+									<div class="col-sm-10">
+										<input type="text" class="form-control" placeholder="email">
+									</div>
+								</div>
+						</div>
+
+						</form>
+					</div>
+				</div>
 			</section>
 		</section>
 
@@ -131,6 +212,20 @@
 		
 		
 		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
     $(document).ready(function() {
       $("#date-popover").popover({
         html: true,
@@ -149,6 +244,20 @@
       console.log('nav ' + nav + ' to: ' + to.month + '/' + to.year);
     }
   
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	

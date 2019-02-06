@@ -17,6 +17,8 @@
 <!-- Bootstrap core CSS -->
 <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 <!--external css-->
+<link href="lib/fullcalendar/bootstrap-fullcalendar.css"
+	rel="stylesheet" />
 <link href="lib/font-awesome/css/font-awesome.css" rel="stylesheet" />
 <link rel="stylesheet" type="text/css" href="css/zabuto_calendar.css">
 <link rel="stylesheet" type="text/css"
@@ -45,7 +47,7 @@
 		<!-- **********************************************************************************************************************************************************
         MAIN SIDEBAR MENU
         *********************************************************************************************************************************************************** -->
-	<!--sidebar start-->
+		<!--sidebar start-->
 		<aside>
 			<div id="sidebar" class="nav-collapse ">
 				<!-- sidebar menu start-->
@@ -64,8 +66,6 @@
 						<ul class="sub">
 							<li><a href="info_persos_form.html">Informations
 									personelles</a></li>
-							<li><a href="adresse_form.html">Adresse</a></li>
-							<li><a href="coordonnees_form.html">Coordonnées</a></li>
 							<li><a href="matieres.html">Matières</a></li>
 						</ul></li>
 					<li class="sub-menu"><a href="javascript:;"> <i
@@ -90,25 +90,46 @@
 		<!-- **********************************************************************************************************************************************************
         MAIN CONTENT
         *********************************************************************************************************************************************************** -->
-		<!--main content start-->
 		<section id="main-content">
 			<section class="wrapper">
-				<div class="row">
-					<div class="col-lg-9 main-chart"></div>
-					<!--custom chart end-->
-					<div class="row mt"></div>
+				<h3>Planning</h3>
+				<!-- page start-->
+				<div class="row mt">
+					<aside class="col-lg-3 mt">
+						<h4>Nouveaux Cours</h4>
+						<div id="external-events">
+							<div class="external-event label label-theme">Cours 1</div>
+							<div class="external-event label label-success">Cours 2</div>
+							<div class="external-event label label-info">Cours 3</div>
+							<div class="external-event label label-warning">Cours 4</div>
+							<div class="external-event label label-danger">Cours 5</div>
+							<div class="external-event label label-default">Cours 6</div>
+							<div class="external-event label label-theme">Cours 7</div>
+							<div class="external-event label label-info">Cours 8</div>
+							<div class="external-event label label-info">Cours 9</div>
+							<p class="drop-after">
+								<input type="checkbox" id="drop-remove"> Enlever de la
+								liste après ajout au calendrier
+							</p>
+						</div>
+					</aside>
+					<aside class="col-lg-9 mt">
+						<section class="panel">
+							<div class="panel-body">
+								<div id="calendar" class="has-toolbar"></div>
+							</div>
+						</section>
+					</aside>
 				</div>
-
-				<!--               *************************************************************************************************************************** -->
-				Disponibilites
 			</section>
 		</section>
 
 	</section>
 	<!-- js placed at the end of the document so the pages load faster -->
 	<script src="lib/jquery/jquery.min.js"></script>
-
+	<script src="lib/jquery-ui-1.9.2.custom.min.js"></script>
 	<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+	<script src="lib/fullcalendar/fullcalendar.min.js"></script>
 	<script class="include" type="text/javascript"
 		src="lib/jquery.dcjqaccordion.2.7.js"></script>
 	<script src="lib/jquery.scrollTo.min.js"></script>
@@ -120,15 +141,9 @@
 	<script type="text/javascript" src="lib/gritter-conf.js"></script>
 	<!--script for this page-->
 	<script src="lib/sparkline-chart.js"></script>
-	<script src="lib/zabuto_calendar.js"></script>
+	<script src="lib/calendar-conf-events.js"></script>
 	<script type="application/javascript">
-		
-		
-		
-		
-		
-		
-		
+	
 		
     $(document).ready(function() {
       $("#date-popover").popover({
@@ -148,6 +163,7 @@
       console.log('nav ' + nav + ' to: ' + to.month + '/' + to.year);
     }
   
+	
 	
 	
 	
