@@ -8,7 +8,7 @@
 <meta name="author" content="Dashboard">
 <meta name="keyword"
 	content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
-<title>The Factory - matieres</title>
+<title>The Factory - modification formation</title>
 
 <!-- Favicons -->
 <link href="img/favicon.png" rel="icon">
@@ -108,7 +108,7 @@
 
 				<!-- row -->
 				<div class="row mt">
-					<div class="col-md-12">
+					<div class="col-md-16">
 						<div class="content-panel">
 							<h3>Modification de la formation</h3>
 							<br>
@@ -124,10 +124,12 @@
 											class="input-group-addon">au</span> <input type="text"
 											class="form-control dpd2" name="to">
 									</div>
-
 								</div>
+								<span>
+									<button type="submit" class="btn btn-theme">Valider</button>
+								</span>
 							</div>
-							<br> <br><br>
+							<br> <br>
 
 							<h4>Salle</h4>
 							<div class="form-group">
@@ -139,14 +141,7 @@
 										<option value="Rubis">Rubis</option>
 										<option value="Topaze">Topaze</option>
 								</select>
-									<button class="btn btn-success btn-xs">
-										<i class="fa fa-check"></i>
-									</button>
-<!-- 									<div class="col-md-2"> -->
-<!-- 										<button class="btn btn-success btn-xs"> -->
-<!-- 											<i class="fa fa-check"></i> -->
-<!-- 										</button> -->
-<!-- 									</div> -->
+									<button type="submit" class="btn btn-theme">Valider</button>
 							</div>
 
 
@@ -170,8 +165,7 @@
 												<option value="Intermédiaire">Intermédiaire</option>
 												<option value="Avancé">Avancé</option>
 												<option value="Expert">Expert</option>
-										</select>
-											</button></td>
+										</select></td>
 
 										<td>8 jours</td>
 
@@ -263,33 +257,25 @@
 							</table>
 							<br>
 							<div class="col-sm-10">
-								<br> <span class="btn btn-success fileinput-button">
-									<a href="majMatiere.html"> <input type="button" value="+"></a>
+								<span class="btn btn-success fileinput-button"> <i
+									class="glyphicon glyphicon-plus"></i>
 								</span>
-
 							</div>
-							<br>
 							<button type="submit" class="btn btn-theme">Valider</button>
-							<br><br><br>
-	<table class="table table-striped table-advance table-hover">
+							<br> <br> <br>
+							<table class="table table-striped table-advance table-hover">
 								<h4>Formateurs</h4>
 								<hr>
 								<thead>
 									<tr>
-									
 										<th><i class="fa fa-beer"></i> Matière</th>
-									
-										<th><i class="fa fa-calendar"></i>Nom</th>
+										<th><i class="fa fa-italic"></i>Nom</th>
 									</tr>
 								</thead>
 								<tbody>
 									<tr>
-										<td><a href="basic_table.html#">Java Algo</a></td>
-										<td>
-											</button></td>
-
-				
-
+										<td>Java Algo</td>
+										<td>Jacky Melloul</td>
 										<td>
 											<button class="btn btn-primary btn-xs">
 												<i class="fa fa-pencil"></i>
@@ -299,15 +285,41 @@
 										</td>
 									</tr>
 									<tr>
-										<td><a href="basic_table.html#">Java avancé</a></td>
-										<td><select>
-												<option value="Débutant">Débutant</option>
-												<option value="Intermédiaire">Intermédiaire</option>
-												<option value="Avancé">Avancé</option>
-												<option value="Expert">Expert</option>
-										</select>
-										<td>4 jours</td>
-
+										<td>Java avancé</td>
+										<td>Jacky Melloul</td>
+										<td>
+											<button class="btn btn-primary btn-xs">
+												<i class="fa fa-pencil"></i>
+												<button class="btn btn-danger btn-xs">
+													<i class="fa fa-trash-o "></i>
+												</button>
+										</td>
+									</tr>
+									<tr>
+										<td>Spring</td>
+										<td>David Martin</td>
+										<td>
+											<button class="btn btn-primary btn-xs">
+												<i class="fa fa-pencil"></i>
+												<button class="btn btn-danger btn-xs">
+													<i class="fa fa-trash-o "></i>
+												</button>
+										</td>
+									</tr>
+									<tr>
+										<td>Angular</td>
+										<td>Walid Trabelsi</td>
+										<td>
+											<button class="btn btn-primary btn-xs">
+												<i class="fa fa-pencil"></i>
+												<button class="btn btn-danger btn-xs">
+													<i class="fa fa-trash-o "></i>
+												</button>
+										</td>
+									</tr>
+									<tr>
+										<td>Agile</td>
+										<td>Walid Trabelsi</td>
 										<td>
 											<button class="btn btn-primary btn-xs">
 												<i class="fa fa-pencil"></i>
@@ -317,71 +329,172 @@
 										</td>
 									</tr>
 
+
+								</tbody>
+							</table>
+							<!-- 							<br> -->
+							<!-- 							<div class="col-sm-10"> -->
+							<!-- 								<span class="btn btn-success fileinput-button"> <i -->
+							<!-- 									class="glyphicon glyphicon-plus"></i> -->
+							<!-- 								</span> -->
+							<br>
+							<div class="col-sm-10">
+								<span class="btn btn-success fileinput-button"> <i
+									class="glyphicon glyphicon-plus"></i>
+								</span>
+							</div>
+							<button type="submit" class="btn btn-theme">Valider</button>
+							<br> <br> <br>
+							<table
+								class="table table-striped table-advance
+							table-hover">
+								<h4>Stagiaire</h4>
+								<hr>
+								<thead>
 									<tr>
-										<td><a href="basic_table.html#">Spring</a></td>
+										<th><i class="fa fa-user"></i> Identifiant</th>
+										<th><i class="fa fa-italic"></i> Nom</th>
+										<th><i class="fa fa-italic"></i> Prénom</th>
+										<th class="hidden-phone"><i class="fa fa-list-alt"></i>
+											Formation</th>
+										<th><i class="fa fa-list-ol"></i>Formation_id</th>
+										<th></th>
+
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td><a href="basic_table.html#">1</a></td>
+										<td class="hidden-phone">SMITH</td>
+										<td class="hidden-phone">Jacques</td>
 										<td><select>
-												<option value="Débutant">Débutant</option>
-												<option value="Intermédiaire">Intermédiaire</option>
-												<option value="Avancé">Avancé</option>
-												<option value="Expert">Expert</option>
+												<option value="JAVA EE">JAVA EE</option>
+												<option value="Management">Management</option>
+												<option value="Hotellerie">Hotellerie</option>
+												<option value="Business Analyst">Business Analyst</option>
 										</select></td>
-										<td>12 jours</td>
+										<td>12</td>
 
 										<td>
+
 											<button class="btn btn-primary btn-xs">
 												<i class="fa fa-pencil"></i>
-												<button class="btn btn-danger btn-xs">
-													<i class="fa fa-trash-o "></i>
-												</button>
+											</button>
+
+											<button class="btn btn-danger btn-xs">
+												<i class="fa fa-trash-o "></i>
+											</button>
 										</td>
 									</tr>
-
 									<tr>
-										<td><a href="basic_table.html#">Angular</a></td>
+										<td><a href="basic_table.html#">1</a></td>
+										<td class="hidden-phone">SMITH</td>
+										<td class="hidden-phone">Jacques</td>
 										<td><select>
-												<option value="Débutant">Débutant</option>
-												<option value="Intermédiaire">Intermédiaire</option>
-												<option value="Avancé">Avancé</option>
-												<option value="Expert">Expert</option>
-										</select>
-											</button></td>
-										<td>5 jours</td>
-
-										<td>
-											<button class="btn btn-primary btn-xs">
-												<i class="fa fa-pencil"></i>
-												<button class="btn btn-danger btn-xs">
-													<i class="fa fa-trash-o "></i>
-												</button>
-										</td>
-									</tr>
-
-									<tr>
-										<td><a href="basic_table.html#">Agile</a></td>
-										<td><select>
-												<option value="Débutant">Débutant</option>
-												<option value="Intermédiaire">Intermédiaire</option>
-												<option value="Avancé">Avancé</option>
-												<option value="Expert">Expert</option>
+												<option value="JAVA EE">JAVA EE</option>
+												<option value="Management">Management</option>
+												<option value="Hotellerie">Hotellerie</option>
+												<option value="Business Analyst">Business Analyst</option>
 										</select></td>
-										<td>3 jours</td>
+										<td>12</td>
+
 										<td>
 											<button class="btn btn-primary btn-xs">
 												<i class="fa fa-pencil"></i>
-												<button class="btn btn-danger btn-xs">
-													<i class="fa fa-trash-o "></i>
-												</button>
+											</button>
+
+											<button class="btn btn-danger btn-xs">
+												<i class="fa fa-trash-o "></i>
+											</button>
+										</td>
+									</tr>
+
+									<tr>
+										<td><a href="basic_table.html#">2</a></td>
+										<td class="hidden-phone">SMITH</td>
+										<td class="hidden-phone">Jacques</td>
+										<td><select>
+												<option value="JAVA EE">JAVA EE</option>
+												<option value="Management">Management</option>
+												<option value="Hotellerie">Hotellerie</option>
+												<option value="Business Analyst">Business Analyst</option>
+										</select></td>
+										<td>12</td>
+
+										<td>
+											<button class="btn btn-primary btn-xs">
+												<i class="fa fa-pencil"></i>
+											</button>
+
+											<button class="btn btn-danger btn-xs">
+												<i class="fa fa-trash-o "></i>
+											</button>
+										</td>
+									</tr>
+
+									<tr>
+										<td><a href="basic_table.html#">3</a></td>
+										<td class="hidden-phone">BOB</td>
+										<td class="hidden-phone">Vincent</td>
+										<td><select>
+												<option value="JAVA EE">JAVA EE</option>
+												<option value="Management">Management</option>
+												<option value="Hotellerie">Hotellerie</option>
+												<option value="Business Analyst">Business Analyst</option>
+										</select></td>
+										<td>12</td>
+
+										<td>
+											<button class="btn btn-primary btn-xs">
+												<i class="fa fa-pencil"></i>
+											</button>
+
+											<button class="btn btn-danger btn-xs">
+												<i class="fa fa-trash-o "></i>
+											</button>
+										</td>
+									</tr>
+
+									<tr>
+										<td><a href="basic_table.html#">4</a></td>
+										<td class="hidden-phone">MARTIN</td>
+										<td class="hidden-phone">Françoise</td>
+										<td><select>
+												<option value="JAVA EE">JAVA EE</option>
+												<option value="Management">Management</option>
+												<option value="Hotellerie">Hotellerie</option>
+												<option value="Business Analyst">Business Analyst</option>
+										</select></td>
+										<td>12</td>
+
+										<td>
+											<button class="btn btn-primary btn-xs">
+												<i class="fa fa-pencil"></i>
+											</button>
+
+											<button class="btn btn-danger btn-xs">
+												<i class="fa fa-trash-o "></i>
+											</button>
 										</td>
 									</tr>
 
 								</tbody>
 							</table>
-
+							<br>
+							<div class="col-sm-10">
+								<span class="btn btn-success fileinput-button"> <i
+									class="glyphicon glyphicon-plus"></i>
+								</span>
+							</div>
+							<button type="submit" class="btn btn-theme">Valider</button>
+							<br>	<br>	<br>             <button type="button" class="btn btn-success">Confirmer</button>
 						</div>
-						<br> 
-						<!-- /content-panel -->
+
 					</div>
-					<!-- /col-md-12 -->
+				
+					<!-- /content-panel -->
+				</div>
+				<!-- /col-md-12 -->
 				</div>
 				<!-- /row -->
 			</section>
@@ -407,48 +520,6 @@
 	<script type="application/javascript">
 		
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
     $(document).ready(function() {
       $("#date-popover").popover({
         html: true,
@@ -467,44 +538,6 @@
       console.log('nav ' + nav + ' to: ' + to.month + '/' + to.year);
     }
   
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	
 	
 	
