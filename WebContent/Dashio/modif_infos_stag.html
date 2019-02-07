@@ -8,7 +8,7 @@
 <meta name="author" content="Dashboard">
 <meta name="keyword"
 	content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
-<title>Factory - admin - new Gest</title>
+<title>Factory-Administrateur-modif stag</title>
 
 <!-- Favicons -->
 <link href="img/favicon.png" rel="icon">
@@ -45,7 +45,7 @@
 		<!-- **********************************************************************************************************************************************************
         MAIN SIDEBAR MENU
         *********************************************************************************************************************************************************** -->
-			<!--sidebar start-->
+		<!--sidebar start-->
 		<aside>
 			<div id="sidebar" class="nav-collapse ">
 				<!-- sidebar menu start-->
@@ -56,10 +56,10 @@
 					</p>
 					<h5 class="centered">Bienvenue XXX</h5>
 					<h5 class="centered">(Profil Admnistrateur)</h5>
-					<li class="mt"><a href="administrateur.html">
+					<li class="mt"><a href="gestionnaire.html">
 							<i class="fa fa-home"></i> <span>Accueil</span>
 					</a></li>
-						<li class="sub-menu"><a  class="active" href="javascript:;"> <i
+					<li class="sub-menu"><a href="javascript:;"> <i
 							class="fa fa-file-text-o"></i> <span>Inscriptions</span>
 					</a>
 						<ul class="sub">
@@ -68,7 +68,7 @@
 							<li><a href="inscription_gest.html">Gestionnaire</a></li>
 							<li><a href="inscription_stag.html">Stagiaire</a></li>
 						</ul></li>
-					<li class="sub-menu"><a href="javascript:;"> <i
+					<li class="sub-menu"><a class="active" href="javascript:;"> <i
 							class="fa fa-users"></i> <span>Gestion RH</span>
 					</a>
 						<ul class="sub">
@@ -141,7 +141,7 @@
 
 				<!--               *************************************************************************************************************************** -->
 
-				<h4>Ajout d'un nouveau Gestionnaire</h4>
+				<h4>Modification des informations du technicien</h4>
 
 				<div class="row mt">
 					<div class="col-lg-12">
@@ -151,14 +151,15 @@
 									<label class="col-sm-2 col-sm-2 control-label">Nom</label>
 									<div class="col-sm-10">
 										<input type="text" class="form-control"
-											placeholder="Nom">
+											placeholder="NomPersonne">
+										<!--Attention NICO !:!!!!!! a la place des place holders, mets du property binding avec le vrai nom de la personne correspondante!!! -->
 									</div>
 								</div>
 								<div class="form-group">
 									<label class="col-sm-2 col-sm-2 control-label">Prenom</label>
 									<div class="col-sm-10">
 										<input type="text" class="form-control"
-											placeholder="Prenom">
+											placeholder="PrenomPersonne">
 									</div>
 								</div>
 								<br> <span class="form-group"> <label
@@ -243,7 +244,6 @@
 	<script src="lib/zabuto_calendar.js"></script>
 	<script type="application/javascript">
 		
-		
     $(document).ready(function() {
       $("#date-popover").popover({
         html: true,
@@ -262,7 +262,6 @@
       console.log('nav ' + nav + ' to: ' + to.month + '/' + to.year);
     }
  
-	
 	</script>
 </body>
 

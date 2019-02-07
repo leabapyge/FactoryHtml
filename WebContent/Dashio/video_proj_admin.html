@@ -8,7 +8,7 @@
 <meta name="author" content="Dashboard">
 <meta name="keyword"
 	content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
-<title>Factory - admin - new Gest</title>
+<title>Factory-Administrateur</title>
 
 <!-- Favicons -->
 <link href="img/favicon.png" rel="icon">
@@ -45,7 +45,7 @@
 		<!-- **********************************************************************************************************************************************************
         MAIN SIDEBAR MENU
         *********************************************************************************************************************************************************** -->
-			<!--sidebar start-->
+		<!--sidebar start-->
 		<aside>
 			<div id="sidebar" class="nav-collapse ">
 				<!-- sidebar menu start-->
@@ -59,7 +59,7 @@
 					<li class="mt"><a href="administrateur.html">
 							<i class="fa fa-home"></i> <span>Accueil</span>
 					</a></li>
-						<li class="sub-menu"><a  class="active" href="javascript:;"> <i
+					<li class="sub-menu"><a href="javascript:;"> <i
 							class="fa fa-file-text-o"></i> <span>Inscriptions</span>
 					</a>
 						<ul class="sub">
@@ -71,12 +71,13 @@
 					<li class="sub-menu"><a href="javascript:;"> <i
 							class="fa fa-users"></i> <span>Gestion RH</span>
 					</a>
-						<ul class="sub">
-							<li><a href="modif_infos_form.html">Formateur</a></li>
-							<li><a href="modif_infos_tech.html">Technicien</a></li>
-							<li><a href="modif_infos_gest.html">Gestionnaire</a></li>
-							<li><a href="modif_infos_stag.html">Stagiaire</a></li>
+					<ul class="sub">
+							<li><a href="liste_formateur.html">Formateur</a></li>
+							<li><a href="liste_tech.html">Technicien</a></li>
+							<li><a href="liste_gest.html">Gestionnaire</a></li>
+							<li><a href="liste_stag.html">Stagiaire</a></li>
 						</ul></li>
+
 					<li class="sub-menu"><a href="javascript:;"> <i
 							class="fa fa-suitcase"></i> <span>Gestion Clients</span>
 					</a>
@@ -103,7 +104,7 @@
 							<li><a href="liste_modif_form_business_admin.html">Formations
 									Business</a></li>
 						</ul></li>
-					<li class="sub-menu"><a href="javascript:;"> <i
+					<li class="sub-menu"><a class="active"  href="javascript:;"> <i
 							class="fa fa-wrench"></i> <span>Gestion du materiel</span>
 					</a>
 						<ul class="sub">
@@ -133,137 +134,178 @@
 		<!--main content start-->
 		<section id="main-content">
 			<section class="wrapper">
-				<div class="row">
-					<div class="col-lg-9 main-chart"></div>
-					<!--custom chart end-->
-					<div class="row mt"></div>
-				</div>
-
-				<!--               *************************************************************************************************************************** -->
-
-				<h4>Ajout d'un nouveau Gestionnaire</h4>
-
+				<h3>Gestion des Vidéoprojecteurs</h3>
+				<!-- BASIC FORM ELELEMNTS -->
 				<div class="row mt">
 					<div class="col-lg-12">
 						<div class="form-panel">
-							<form class="form-horizontal style-form" method="get">
-								<div class="form-group">
-									<label class="col-sm-2 col-sm-2 control-label">Nom</label>
-									<div class="col-sm-10">
-										<input type="text" class="form-control"
-											placeholder="Nom">
-									</div>
-								</div>
-								<div class="form-group">
-									<label class="col-sm-2 col-sm-2 control-label">Prenom</label>
-									<div class="col-sm-10">
-										<input type="text" class="form-control"
-											placeholder="Prenom">
-									</div>
-								</div>
-								<br> <span class="form-group"> <label
-									class="col-sm-2 col-sm-2 control-label">Adresse</label>
+							<h4 class="mb">Ajouter un vidéoprojecteur</h4>
+
+							<div class="form-group">
+								<label class="col-sm-2 col-sm-2 control-label">Code</label>
+								<span>
+									<input type="text" class="form-control">
 								</span>
-								<div class="form-group">
-									<label class="col-sm-2 col-sm-2 control-label">N°</label>
-									<div class="col-sm-10">
-										<input type="text" class="form-control"
-											placeholder="Numero de rue">
-									</div>
-								</div>
-								<div class="form-group">
-									<label class="col-sm-2 col-sm-2 control-label">rue</label>
-									<div class="col-sm-10">
-										<input type="text" class="form-control"
-											placeholder="Nom de rue">
-									</div>
-								</div>
-								<div class="form-group">
-									<label class="col-sm-2 col-sm-2 control-label">Code
-										postal</label>
-									<div class="col-sm-10">
-										<input type="text" class="form-control"
-											placeholder="Code postal">
-									</div>
-								</div>
-								<div class="form-group">
-									<label class="col-sm-2 col-sm-2 control-label">Ville</label>
-									<div class="col-sm-10">
-										<input type="text" class="form-control" placeholder="Ville">
-									</div>
-								</div>
-								<div class="form-group">
-									<label class="col-sm-2 col-sm-2 control-label">Pays</label>
-									<div class="col-sm-10">
-										<input type="text" class="form-control" placeholder="Pays">
-									</div>
-								</div>
-								<br> <span class="form-group"> <label
-									class="col-sm-2 col-sm-2 control-label">Coordonnées</label>
+							</div>
+							<div class="col-sm-10">
+								<span class="btn btn-success fileinput-button"> <i
+									class="glyphicon glyphicon-plus"></i>
 								</span>
-								<div class="form-group">
-									<label class="col-sm-2 col-sm-2 control-label">Telephone</label>
-									<div class="col-sm-10">
-										<input type="text" class="form-control"
-											placeholder="Telephone">
-									</div>
-								</div>
-								<div class="form-group">
-									<label class="col-sm-2 col-sm-2 control-label">Adresse
-										email</label>
-									<div class="col-sm-10">
-										<input type="text" class="form-control" placeholder="email">
-									</div>
-								</div>
+
+							</div>
 						</div>
-						<br>
-						<button type="submit" class="btn btn-theme">Valider</button>
+
+
 						</form>
 					</div>
 				</div>
+				<!-- col-lg-12-->
+				</div>
+				<!-- /row -->
+
+
+				<!-- /row -->
+				<!-- INPUT MESSAGES -->
+				<div class="row mt">
+					<div class="col-md-12">
+						<div class="content-panel">
+							<table class="table table-striped table-advance table-hover">
+								<h4>Liste des Vidéoprojecteurs</h4>
+								<hr>
+								<thead>
+									<tr>
+										<th><i class="fa fa-video-camera"></i> Code Vidéoprojecteurs</th>
+										<th><i class="fa fa-map-marker"></i> Localisation</th>
+										<th><i class="fa fa-columns"></i>Disponibilité</th>
+
+										<th></th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td><a href="basic_table.html#">3540S</a>
+										<span><button class="btn btn-primary btn-xs">
+													<i class="fa fa-pencil"></i></span>
+											</button></td>
+										<td><select>
+												<option value="Salle Topaze">Topaze</option>
+												<option value="Salle Opale">Opale</option>
+												<option value="Salle Bobby">Bobby</option>
+												<option value="Salle Henry">Henry</option>
+										</select> <span><button class="btn btn-primary btn-xs">
+													<i class="fa fa-pencil"></i></span>
+											</button></td>
+										<td>
+											<div class="row mt">
+												<div class="col-sm-6 text-center">
+													<div class="switch switch-square"
+														data-on-label="<i class=' fa fa-check'></i>"
+														data-off-label="<i class='fa fa-times'></i>">
+														<input type="checkbox" />
+													</div>
+												</div>
+
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td><a href="basic_table.html#">3148PA </a>
+										<span><button class="btn btn-primary btn-xs">
+													<i class="fa fa-pencil"></i></span>
+											</button></td>
+										<td><select>
+												<option value="Salle Topaze">Topaze</option>
+												<option value="Salle Opale">Opale</option>
+												<option value="Salle Bobby">Bobby</option>
+												<option value="Salle Henry">Henry</option>
+										</select> <span><button class="btn btn-primary btn-xs">
+													<i class="fa fa-pencil"></i></span>
+											</button></td>
+										<td>
+											<div class="row mt">
+												<div class="col-sm-6 text-center">
+													<div class="switch switch-square"
+														data-on-label="<i class=' fa fa-check'></i>"
+														data-off-label="<i class='fa fa-times'></i>">
+														<input type="checkbox" />
+													</div>
+												</div>
+
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td><a href="basic_table.html#">3182SR</a>
+										<span><button class="btn btn-primary btn-xs">
+													<i class="fa fa-pencil"></i></span>
+											</button></td>
+										<td><select>
+												<option value="Salle Topaze">Topaze</option>
+												<option value="Salle Opale">Opale</option>
+												<option value="Salle Bobby">Bobby</option>
+												<option value="Salle Henry">Henry</option>
+										</select> <span><button class="btn btn-primary btn-xs">
+													<i class="fa fa-pencil"></i></span>
+											</button></td>
+										<td>
+											<div class="row mt">
+												<div class="col-sm-6 text-center">
+													<div class="switch switch-square"
+														data-on-label="<i class=' fa fa-check'></i>"
+														data-off-label="<i class='fa fa-times'></i>">
+														<input type="checkbox" />
+													</div>
+												</div>
+
+											</div>
+										</td>
+
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<!-- /content-panel -->
+					</div>
+					<!-- /col-md-12 -->
+				</div>
+				<div class="row mt">
+
+					<!-- /col-lg-12 -->
+					<!-- CUSTOM TOGGLES -->
+
+				</div>
+				<!-- /row -->
 			</section>
+			<!-- /wrapper -->
 		</section>
+		<!-- /MAIN CONTENT -->
+		<!--main content end-->
 
 	</section>
 	<!-- js placed at the end of the document so the pages load faster -->
 	<script src="lib/jquery/jquery.min.js"></script>
-
 	<script src="lib/bootstrap/js/bootstrap.min.js"></script>
 	<script class="include" type="text/javascript"
 		src="lib/jquery.dcjqaccordion.2.7.js"></script>
 	<script src="lib/jquery.scrollTo.min.js"></script>
 	<script src="lib/jquery.nicescroll.js" type="text/javascript"></script>
-	<script src="lib/jquery.sparkline.js"></script>
 	<!--common script for all pages-->
 	<script src="lib/common-scripts.js"></script>
-	<script type="text/javascript" src="lib/gritter/js/jquery.gritter.js"></script>
-	<script type="text/javascript" src="lib/gritter-conf.js"></script>
 	<!--script for this page-->
-	<script src="lib/sparkline-chart.js"></script>
-	<script src="lib/zabuto_calendar.js"></script>
-	<script type="application/javascript">
-		
-		
-    $(document).ready(function() {
-      $("#date-popover").popover({
-        html: true,
-        trigger: "manual"
-      });
-      $("#date-popover").hide();
-      $("#date-popover").click(function(e) {
-        $(this).hide();
-      });
+	<script src="lib/jquery-ui-1.9.2.custom.min.js"></script>
+	<!--custom switch-->
+	<script src="lib/bootstrap-switch.js"></script>
 
+	<script type="text/javascript"
+		src="lib/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+	<script type="text/javascript"
+		src="lib/bootstrap-daterangepicker/date.js"></script>
+	<script type="text/javascript"
+		src="lib/bootstrap-daterangepicker/daterangepicker.js"></script>
+	<script type="text/javascript"
+		src="lib/bootstrap-inputmask/bootstrap-inputmask.min.js"></script>
+	<script src="lib/form-component.js"></script>
 
-    function myNavFunction(id) {
-      $("#date-popover").hide();
-      var nav = $("#" + id).data("navigation");
-      var to = $("#" + id).data("to");
-      console.log('nav ' + nav + ' to: ' + to.month + '/' + to.year);
-    }
- 
-	
-	</script>
 </body>
 
 </html>

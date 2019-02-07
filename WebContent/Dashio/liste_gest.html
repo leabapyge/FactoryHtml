@@ -8,7 +8,7 @@
 <meta name="author" content="Dashboard">
 <meta name="keyword"
 	content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
-<title>Factory - admin - new Gest</title>
+<title>Factory-Administrateur</title>
 
 <!-- Favicons -->
 <link href="img/favicon.png" rel="icon">
@@ -45,7 +45,7 @@
 		<!-- **********************************************************************************************************************************************************
         MAIN SIDEBAR MENU
         *********************************************************************************************************************************************************** -->
-			<!--sidebar start-->
+		<!--sidebar start-->
 		<aside>
 			<div id="sidebar" class="nav-collapse ">
 				<!-- sidebar menu start-->
@@ -59,7 +59,7 @@
 					<li class="mt"><a href="administrateur.html">
 							<i class="fa fa-home"></i> <span>Accueil</span>
 					</a></li>
-						<li class="sub-menu"><a  class="active" href="javascript:;"> <i
+					<li class="sub-menu"><a href="javascript:;"> <i
 							class="fa fa-file-text-o"></i> <span>Inscriptions</span>
 					</a>
 						<ul class="sub">
@@ -68,14 +68,14 @@
 							<li><a href="inscription_gest.html">Gestionnaire</a></li>
 							<li><a href="inscription_stag.html">Stagiaire</a></li>
 						</ul></li>
-					<li class="sub-menu"><a href="javascript:;"> <i
+					<li class="sub-menu"><a class="active" href="javascript:;"> <i
 							class="fa fa-users"></i> <span>Gestion RH</span>
 					</a>
-						<ul class="sub">
-							<li><a href="modif_infos_form.html">Formateur</a></li>
-							<li><a href="modif_infos_tech.html">Technicien</a></li>
-							<li><a href="modif_infos_gest.html">Gestionnaire</a></li>
-							<li><a href="modif_infos_stag.html">Stagiaire</a></li>
+					<ul class="sub">
+							<li><a href="liste_formateur.html">Formateur</a></li>
+							<li><a href="liste_tech.html">Technicien</a></li>
+							<li><a href="liste_gest.html">Gestionnaire</a></li>
+							<li><a href="liste_stag.html">Stagiaire</a></li>
 						</ul></li>
 					<li class="sub-menu"><a href="javascript:;"> <i
 							class="fa fa-suitcase"></i> <span>Gestion Clients</span>
@@ -129,102 +129,15 @@
 		<!--sidebar end-->
 		<!-- **********************************************************************************************************************************************************
         MAIN CONTENT
-        *********************************************************************************************************************************************************** -->
-		<!--main content start-->
+        ********************************************************************************************************************************************************** -->
 		<section id="main-content">
 			<section class="wrapper">
-				<div class="row">
-					<div class="col-lg-9 main-chart"></div>
-					<!--custom chart end-->
-					<div class="row mt"></div>
-				</div>
-
-				<!--               *************************************************************************************************************************** -->
-
-				<h4>Ajout d'un nouveau Gestionnaire</h4>
-
-				<div class="row mt">
-					<div class="col-lg-12">
-						<div class="form-panel">
-							<form class="form-horizontal style-form" method="get">
-								<div class="form-group">
-									<label class="col-sm-2 col-sm-2 control-label">Nom</label>
-									<div class="col-sm-10">
-										<input type="text" class="form-control"
-											placeholder="Nom">
-									</div>
-								</div>
-								<div class="form-group">
-									<label class="col-sm-2 col-sm-2 control-label">Prenom</label>
-									<div class="col-sm-10">
-										<input type="text" class="form-control"
-											placeholder="Prenom">
-									</div>
-								</div>
-								<br> <span class="form-group"> <label
-									class="col-sm-2 col-sm-2 control-label">Adresse</label>
-								</span>
-								<div class="form-group">
-									<label class="col-sm-2 col-sm-2 control-label">N°</label>
-									<div class="col-sm-10">
-										<input type="text" class="form-control"
-											placeholder="Numero de rue">
-									</div>
-								</div>
-								<div class="form-group">
-									<label class="col-sm-2 col-sm-2 control-label">rue</label>
-									<div class="col-sm-10">
-										<input type="text" class="form-control"
-											placeholder="Nom de rue">
-									</div>
-								</div>
-								<div class="form-group">
-									<label class="col-sm-2 col-sm-2 control-label">Code
-										postal</label>
-									<div class="col-sm-10">
-										<input type="text" class="form-control"
-											placeholder="Code postal">
-									</div>
-								</div>
-								<div class="form-group">
-									<label class="col-sm-2 col-sm-2 control-label">Ville</label>
-									<div class="col-sm-10">
-										<input type="text" class="form-control" placeholder="Ville">
-									</div>
-								</div>
-								<div class="form-group">
-									<label class="col-sm-2 col-sm-2 control-label">Pays</label>
-									<div class="col-sm-10">
-										<input type="text" class="form-control" placeholder="Pays">
-									</div>
-								</div>
-								<br> <span class="form-group"> <label
-									class="col-sm-2 col-sm-2 control-label">Coordonnées</label>
-								</span>
-								<div class="form-group">
-									<label class="col-sm-2 col-sm-2 control-label">Telephone</label>
-									<div class="col-sm-10">
-										<input type="text" class="form-control"
-											placeholder="Telephone">
-									</div>
-								</div>
-								<div class="form-group">
-									<label class="col-sm-2 col-sm-2 control-label">Adresse
-										email</label>
-									<div class="col-sm-10">
-										<input type="text" class="form-control" placeholder="email">
-									</div>
-								</div>
-						</div>
-						<br>
-						<button type="submit" class="btn btn-theme">Valider</button>
-						</form>
-					</div>
-				</div>
+				<h1>Affichage table gestionnaires</h1>
 			</section>
 		</section>
 
-	</section>
+
+
 	<!-- js placed at the end of the document so the pages load faster -->
 	<script src="lib/jquery/jquery.min.js"></script>
 
@@ -243,7 +156,7 @@
 	<script src="lib/zabuto_calendar.js"></script>
 	<script type="application/javascript">
 		
-		
+	
     $(document).ready(function() {
       $("#date-popover").popover({
         html: true,
@@ -254,6 +167,19 @@
         $(this).hide();
       });
 
+      $("#my-calendar").zabuto_calendar({
+        action: function() {
+          return myDateFunction(this.id, false);
+        },
+        action_nav: function() {
+          return myNavFunction(this.id);
+        },
+        ajax: {
+          url: "show_data.php?action=1",
+          modal: true
+        },
+      });
+    });
 
     function myNavFunction(id) {
       $("#date-popover").hide();
@@ -261,7 +187,7 @@
       var to = $("#" + id).data("to");
       console.log('nav ' + nav + ' to: ' + to.month + '/' + to.year);
     }
- 
+  
 	
 	</script>
 </body>

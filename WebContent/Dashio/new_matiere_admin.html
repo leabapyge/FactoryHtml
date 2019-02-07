@@ -8,7 +8,7 @@
 <meta name="author" content="Dashboard">
 <meta name="keyword"
 	content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
-<title>Factory - admin - new Gest</title>
+<title>Factory-Administrateur- new matiere</title>
 
 <!-- Favicons -->
 <link href="img/favicon.png" rel="icon">
@@ -45,7 +45,7 @@
 		<!-- **********************************************************************************************************************************************************
         MAIN SIDEBAR MENU
         *********************************************************************************************************************************************************** -->
-			<!--sidebar start-->
+		<!--sidebar start-->
 		<aside>
 			<div id="sidebar" class="nav-collapse ">
 				<!-- sidebar menu start-->
@@ -56,10 +56,10 @@
 					</p>
 					<h5 class="centered">Bienvenue XXX</h5>
 					<h5 class="centered">(Profil Admnistrateur)</h5>
-					<li class="mt"><a href="administrateur.html">
-							<i class="fa fa-home"></i> <span>Accueil</span>
+					<li class="mt"><a href="administrateur.html"> <i
+							class="fa fa-home"></i> <span>Accueil</span>
 					</a></li>
-						<li class="sub-menu"><a  class="active" href="javascript:;"> <i
+					<li class="sub-menu"><a href="javascript:;"> <i
 							class="fa fa-file-text-o"></i> <span>Inscriptions</span>
 					</a>
 						<ul class="sub">
@@ -72,11 +72,12 @@
 							class="fa fa-users"></i> <span>Gestion RH</span>
 					</a>
 						<ul class="sub">
-							<li><a href="modif_infos_form.html">Formateur</a></li>
-							<li><a href="modif_infos_tech.html">Technicien</a></li>
-							<li><a href="modif_infos_gest.html">Gestionnaire</a></li>
-							<li><a href="modif_infos_stag.html">Stagiaire</a></li>
+							<li><a href="liste_formateur.html">Formateur</a></li>
+							<li><a href="liste_tech.html">Technicien</a></li>
+							<li><a href="liste_gest.html">Gestionnaire</a></li>
+							<li><a href="liste_stag.html">Stagiaire</a></li>
 						</ul></li>
+
 					<li class="sub-menu"><a href="javascript:;"> <i
 							class="fa fa-suitcase"></i> <span>Gestion Clients</span>
 					</a>
@@ -84,20 +85,21 @@
 							<li><a href="fiche_client.html">Fiches clients</a></li>
 							<li><a href="inscription_client.html">Ajout client</a></li>
 						</ul></li>
-					<li class="sub-menu"><a href="javascript:;"> <i
-							class="fa fa-plus-square"></i> <span>Ajout
+					<li class="sub-menu"><a class="active" href="javascript:;">
+							<i class="fa fa-plus-square"></i> <span>Ajout
 								formation/matière</span>
 					</a>
 						<ul class="sub">
-							<li><a href="new_formation_admin.html">Nouvelle formation</a></li>
+							<li><a href="new_formation_admin.html">Nouvelle
+									formation</a></li>
 							<li><a href="new_matiere_admin.html">Nouvelle matière</a></li>
 						</ul></li>
 					<li class="sub-menu"><a href="javascript:;"> <i
 							class="fa fa-edit"></i> <span>Modifier une formation</span>
 					</a>
 						<ul class="sub">
-							<li><a href="liste_modif_form_java_admin.html">Formations Java
-							</a></li>
+							<li><a href="liste_modif_form_java_admin.html">Formations
+									Java </a></li>
 							<li><a href="liste_modif_form_hotellerie_admin.html">Formations
 									Hotellerie</a></li>
 							<li><a href="liste_modif_form_business_admin.html">Formations
@@ -133,96 +135,73 @@
 		<!--main content start-->
 		<section id="main-content">
 			<section class="wrapper">
-				<div class="row">
-					<div class="col-lg-9 main-chart"></div>
-					<!--custom chart end-->
-					<div class="row mt"></div>
-				</div>
-
-				<!--               *************************************************************************************************************************** -->
-
-				<h4>Ajout d'un nouveau Gestionnaire</h4>
-
+				<h3>Ajouter une matière</h3>
+				<!-- BASIC FORM ELELEMNTS -->
 				<div class="row mt">
 					<div class="col-lg-12">
 						<div class="form-panel">
 							<form class="form-horizontal style-form" method="get">
 								<div class="form-group">
-									<label class="col-sm-2 col-sm-2 control-label">Nom</label>
+									<label class="col-sm-2 col-sm-2 control-label">Titre</label>
 									<div class="col-sm-10">
-										<input type="text" class="form-control"
-											placeholder="Nom">
+										<input type="text" class="form-control">
 									</div>
 								</div>
 								<div class="form-group">
-									<label class="col-sm-2 col-sm-2 control-label">Prenom</label>
+									<label class="col-sm-2 col-sm-2 control-label">Durée du
+										programme</label>
 									<div class="col-sm-10">
-										<input type="text" class="form-control"
-											placeholder="Prenom">
-									</div>
-								</div>
-								<br> <span class="form-group"> <label
-									class="col-sm-2 col-sm-2 control-label">Adresse</label>
-								</span>
-								<div class="form-group">
-									<label class="col-sm-2 col-sm-2 control-label">N°</label>
-									<div class="col-sm-10">
-										<input type="text" class="form-control"
-											placeholder="Numero de rue">
+										<input type="number" name="quantity" min="1" max="15">
+
 									</div>
 								</div>
 								<div class="form-group">
-									<label class="col-sm-2 col-sm-2 control-label">rue</label>
+									<label class="col-sm-2 col-sm-2 control-label">Objectifs
+									</label>
 									<div class="col-sm-10">
-										<input type="text" class="form-control"
-											placeholder="Nom de rue">
+										<input type="text" class="form-control">
 									</div>
 								</div>
 								<div class="form-group">
-									<label class="col-sm-2 col-sm-2 control-label">Code
-										postal</label>
+									<label class="col-sm-2 col-sm-2 control-label">Prerequis
+									</label>
 									<div class="col-sm-10">
-										<input type="text" class="form-control"
-											placeholder="Code postal">
+										<input type="text" class="form-control">
+									</div>
+								</div>
+
+								<div class="form-group">
+									<label class="col-sm-2 col-sm-2 control-label">Contenu
+									</label>
+									<div class="col-sm-10">
+										<input type="text" class="form-control">
 									</div>
 								</div>
 								<div class="form-group">
-									<label class="col-sm-2 col-sm-2 control-label">Ville</label>
+									<label class="col-sm-2 col-sm-2 control-label">Niveau </label>
 									<div class="col-sm-10">
-										<input type="text" class="form-control" placeholder="Ville">
+										<select>
+											<option value="Débutant">Débutant</option>
+											<option value="Intermédiaire">Intermédiaire</option>
+											<option value="Avancé">Avancé</option>
+											<option value="Expert">Expert</option>
+										</select>
 									</div>
 								</div>
-								<div class="form-group">
-									<label class="col-sm-2 col-sm-2 control-label">Pays</label>
-									<div class="col-sm-10">
-										<input type="text" class="form-control" placeholder="Pays">
-									</div>
-								</div>
-								<br> <span class="form-group"> <label
-									class="col-sm-2 col-sm-2 control-label">Coordonnées</label>
-								</span>
-								<div class="form-group">
-									<label class="col-sm-2 col-sm-2 control-label">Telephone</label>
-									<div class="col-sm-10">
-										<input type="text" class="form-control"
-											placeholder="Telephone">
-									</div>
-								</div>
-								<div class="form-group">
-									<label class="col-sm-2 col-sm-2 control-label">Adresse
-										email</label>
-									<div class="col-sm-10">
-										<input type="text" class="form-control" placeholder="email">
-									</div>
+								<div>
+									<input type="submit"><span> <class="glyphiconglyphicon-plus">
+										</i></span>
 								</div>
 						</div>
-						<br>
-						<button type="submit" class="btn btn-theme">Valider</button>
 						</form>
+						<!-- /content-panel -->
 					</div>
+					<!-- /col-md-12 -->
 				</div>
+				<!-- /row -->
 			</section>
 		</section>
+
 
 	</section>
 	<!-- js placed at the end of the document so the pages load faster -->
@@ -244,6 +223,9 @@
 	<script type="application/javascript">
 		
 		
+		
+				
+		
     $(document).ready(function() {
       $("#date-popover").popover({
         html: true,
@@ -254,6 +236,19 @@
         $(this).hide();
       });
 
+      $("#my-calendar").zabuto_calendar({
+        action: function() {
+          return myDateFunction(this.id, false);
+        },
+        action_nav: function() {
+          return myNavFunction(this.id);
+        },
+        ajax: {
+          url: "show_data.php?action=1",
+          modal: true
+        },
+      });
+    });
 
     function myNavFunction(id) {
       $("#date-popover").hide();
@@ -261,7 +256,10 @@
       var to = $("#" + id).data("to");
       console.log('nav ' + nav + ' to: ' + to.month + '/' + to.year);
     }
- 
+
+	
+			
+	
 	
 	</script>
 </body>

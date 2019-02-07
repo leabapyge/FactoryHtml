@@ -8,7 +8,7 @@
 <meta name="author" content="Dashboard">
 <meta name="keyword"
 	content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
-<title>Salles</title>
+<title>Factory-Administrateur</title>
 
 <!-- Favicons -->
 <link href="img/favicon.png" rel="icon">
@@ -55,37 +55,75 @@
 							class="img-circle" width="80"></a>
 					</p>
 					<h5 class="centered">Bienvenue XXX</h5>
-					<h5 class="centered">(Profil Technicien)</h5>
-					<li class="mt"><a class="active" href="technicien.html"> <i
-							class="fa fa-home"></i> <span>Accueil</span>
+					<h5 class="centered">(Profil Admnistrateur)</h5>
+					<li class="mt"><a href="administrateur.html">
+							<i class="fa fa-home"></i> <span>Accueil</span>
 					</a></li>
 					<li class="sub-menu"><a href="javascript:;"> <i
-							class="fa fa-edit"></i> <span>Mise à jour profil</span>
+							class="fa fa-file-text-o"></i> <span>Inscriptions</span>
 					</a>
 						<ul class="sub">
-							<li><a href="info_persos_tech.html">Informations personelles</a></li>
+							<li><a href="inscription_form.html">Formateur</a></li>
+							<li><a href="inscription_tech.html">Technicien</a></li>
+							<li><a href="inscription_gest.html">Gestionnaire</a></li>
+							<li><a href="inscription_stag.html">Stagiaire</a></li>
 						</ul></li>
 					<li class="sub-menu"><a href="javascript:;"> <i
-							class="fa fa-calendar-o"></i> <span>Gestion du materiel</span>
+							class="fa fa-users"></i> <span>Gestion RH</span>
+					</a>
+					<ul class="sub">
+							<li><a href="liste_formateur.html">Formateur</a></li>
+							<li><a href="liste_tech.html">Technicien</a></li>
+							<li><a href="liste_gest.html">Gestionnaire</a></li>
+							<li><a href="liste_stag.html">Stagiaire</a></li>
+						</ul></li>
+
+					<li class="sub-menu"><a href="javascript:;"> <i
+							class="fa fa-suitcase"></i> <span>Gestion Clients</span>
 					</a>
 						<ul class="sub">
-							<li><a href="salle.html">Gestion des salles</a></li>
-							<li><a href="ordinateur.html">Gestion des ordinateurs</a></li>
-							<li><a href="video_proj.html">Gestion des video
-									projecteurs</a></li>
+							<li><a href="fiche_client.html">Fiches clients</a></li>
+							<li><a href="inscription_client.html">Ajout client</a></li>
 						</ul></li>
 					<li class="sub-menu"><a href="javascript:;"> <i
-							class="fa fa-calendar"></i> <span>Planning</span>
+							class="fa fa-plus-square"></i> <span>Ajout
+								formation/matière</span>
 					</a>
 						<ul class="sub">
-							<li><a href="formation_plannings_tech.html">Formations Java </a></li>
-							<li><a href="formation_plannings_tech.html">Formations Hotellerie</a></li>
-							<li><a href="formation_plannings_tech.html">Formations Business</a></li>
+							<li><a href="new_formation_admin.html">Nouvelle formation</a></li>
+							<li><a href="new_matiere_admin.html">Nouvelle matière</a></li>
 						</ul></li>
-
-
+					<li class="sub-menu"><a href="javascript:;"> <i
+							class="fa fa-edit"></i> <span>Modifier une formation</span>
+					</a>
+						<ul class="sub">
+							<li><a href="liste_modif_form_java_admin.html">Formations Java
+							</a></li>
+							<li><a href="liste_modif_form_hotellerie_admin.html">Formations
+									Hotellerie</a></li>
+							<li><a href="liste_modif_form_business_admin.html">Formations
+									Business</a></li>
+						</ul></li>
+					<li class="sub-menu"><a class="active"  href="javascript:;"> <i
+							class="fa fa-wrench"></i> <span>Gestion du materiel</span>
+					</a>
+						<ul class="sub">
+							<li><a href="salle_admin.html">Salles</a></li>
+							<li><a href="ordinateur_admin.html">Ordinateurs</a></li>
+							<li><a href="video_proj_admin.html">Videoprojecteurs</a></li>
+						</ul></li>
+					<li class="sub-menu"><a href="javascript:;"> <i
+							class="fa fa-calendar"></i> <span>Consultation Plannings</span>
+					</a>
+						<ul class="sub">
+							<li><a href="formation_plannings_admin.html">Formations
+									Java </a></li>
+							<li><a href="formation_plannings_admin.html">Formations
+									Hotellerie</a></li>
+							<li><a href="formation_plannings_admin.html">Formations
+									Business</a></li>
+						</ul></li>
 				</ul>
-
 				<!-- sidebar menu end-->
 			</div>
 		</aside>
@@ -118,6 +156,7 @@
 										<th><i class="fa fa-bullhorn"></i> Module en cours</th>
 										<th><i class="fa fa-calendar"></i> Date des formations</th>
 										<th><i class="fa fa-bookmark"></i> Disponibilité</th>
+
 									</tr>
 								</thead>
 								<tbody>
@@ -300,11 +339,7 @@
 				src="lib/bootstrap-inputmask/bootstrap-inputmask.min.js"></script>
 			<script src="lib/form-component.js"></script>
 
-
-
-
 			</script>
 </body>
 
 </html>
-
