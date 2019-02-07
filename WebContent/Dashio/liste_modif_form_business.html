@@ -8,7 +8,7 @@
 <meta name="author" content="Dashboard">
 <meta name="keyword"
 	content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
-<title>The Factory - liste formations Business</title>
+<title>Factory-Gestionnaire-liste formations Business</title>
 
 <!-- Favicons -->
 <link href="img/favicon.png" rel="icon">
@@ -45,7 +45,7 @@
 		<!-- **********************************************************************************************************************************************************
         MAIN SIDEBAR MENU
         *********************************************************************************************************************************************************** -->
-				<!--sidebar start-->
+		<!--sidebar start-->
 		<aside>
 			<div id="sidebar" class="nav-collapse ">
 				<!-- sidebar menu start-->
@@ -56,7 +56,7 @@
 					</p>
 					<h5 class="centered">Bienvenue XXX</h5>
 					<h5 class="centered">(Profil Gestionnaire)</h5>
-					<li class="mt"><a class="active" href="gestionnaire.html"> <i
+					<li class="mt"><a href="gestionnaire.html"> <i
 							class="fa fa-home"></i> <span>Accueil</span>
 					</a></li>
 					<li class="sub-menu"><a href="javascript:;"> <i
@@ -76,7 +76,8 @@
 							class="fa fa-wrench"></i> <span>Modifier une formation</span>
 					</a>
 						<ul class="sub">
-							<li><a href="liste_modif_form_java.html">Formations Java </a></li>
+							<li><a href="liste_modif_form_java.html">Formations Java
+							</a></li>
 							<li><a href="liste_modif_form_hotellerie.html">Formations
 									Hotellerie</a></li>
 							<li><a href="liste_modif_form_business.html">Formations
@@ -86,7 +87,8 @@
 							class="fa fa-calendar"></i> <span>Consultation Plannings</span>
 					</a>
 						<ul class="sub">
-							<li><a href="formation_plannings_gest.html">Formations Java </a></li>
+							<li><a href="formation_plannings_gest.html">Formations
+									Java </a></li>
 							<li><a href="formation_plannings_gest.html">Formations
 									Hotellerie</a></li>
 							<li><a href="formation_plannings_gest.html">Formations
@@ -124,75 +126,69 @@
 										<td>Business Analyst</td>
 										<td>235</td>
 										<td>20/02/2019</td>
-										<td>
-											<button class="btn btn-primary btn-xs">
-												<i class="fa fa-pencil"></i>
-											</button>
+										<td><a href="modif_formations.html"><button
+													class="btn btn-primary btn-xs">
+													<i class="fa fa-pencil"></i>
+												</button></a>
 											<button class="btn btn-danger btn-xs">
 												<i class="fa fa-trash-o "></i>
-											</button>
-										</td>
+											</button></td>
 									</tr>
 									<tr>
 										<td>Business Analyst</td>
 										<td>212</td>
 										<td>14/01/2019</td>
-										<td>
-											<button class="btn btn-primary btn-xs">
-												<i class="fa fa-pencil"></i>
-											</button>
+										<td><a href="modif_formations.html"><button
+													class="btn btn-primary btn-xs">
+													<i class="fa fa-pencil"></i>
+												</button></a>
 											<button class="btn btn-danger btn-xs">
 												<i class="fa fa-trash-o "></i>
-											</button>
-										</td>
+											</button></td>
 									</tr>
 
 									<tr>
 										<td>Business Analyst</td>
 										<td>220</td>
 										<td>30/01/2019</td>
-										<td>
-											<button class="btn btn-primary btn-xs">
-												<i class="fa fa-pencil"></i>
-											</button>
+										<td><a href="modif_formations.html"><button
+													class="btn btn-primary btn-xs">
+													<i class="fa fa-pencil"></i>
+												</button></a>
 											<button class="btn btn-danger btn-xs">
 												<i class="fa fa-trash-o "></i>
-											</button>
-										</td>
+											</button></td>
 									</tr>
 
 									<tr>
 										<td>Business Analyst</td>
 										<td>243</td>
 										<td>28/03/2019</td>
-										<td>
-											<button class="btn btn-primary btn-xs">
-												<i class="fa fa-pencil"></i>
-											</button>
+										<td><a href="modif_formations.html"><button
+													class="btn btn-primary btn-xs">
+													<i class="fa fa-pencil"></i>
+												</button></a>
 											<button class="btn btn-danger btn-xs">
 												<i class="fa fa-trash-o "></i>
-											</button>
-										</td>
+											</button></td>
 									</tr>
 
 									<tr>
 										<td>Business Analyst</td>
 										<td>245</td>
 										<td>02/04/2019</td>
-										<td>
-											<button class="btn btn-primary btn-xs"
-												onclick="modif_formations.html">
-												<i class="fa fa-pencil"></i>
-											</button>
+										<td><a href="modif_formations.html"><button
+													class="btn btn-primary btn-xs">
+													<i class="fa fa-pencil"></i>
+												</button></a>
 											<button class="btn btn-danger btn-xs">
 												<i class="fa fa-trash-o "></i>
-											</button>
-										</td>
+											</button></td>
 									</tr>
 
 								</tbody>
 							</table>
-									</div>
+						</div>
 						<!-- /content-panel -->
 					</div>
 					<!-- /col-md-12 -->
@@ -226,6 +222,10 @@
 		
 		
 		
+		
+		
+		
+		
     $(document).ready(function() {
       $("#date-popover").popover({
         html: true,
@@ -243,6 +243,10 @@
       var to = $("#" + id).data("to");
       console.log('nav ' + nav + ' to: ' + to.month + '/' + to.year);
     }
+	
+	
+	
+	
 	
 	
 	

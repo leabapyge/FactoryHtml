@@ -8,7 +8,7 @@
 <meta name="author" content="Dashboard">
 <meta name="keyword"
 	content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
-<title>The Factory - modification formation</title>
+<title>Factory-Gestionnaire-modification formation</title>
 
 <!-- Favicons -->
 <link href="img/favicon.png" rel="icon">
@@ -45,7 +45,7 @@
 		<!-- **********************************************************************************************************************************************************
         MAIN SIDEBAR MENU
         *********************************************************************************************************************************************************** -->
-			<!--sidebar start-->
+		<!--sidebar start-->
 		<aside>
 			<div id="sidebar" class="nav-collapse ">
 				<!-- sidebar menu start-->
@@ -56,7 +56,7 @@
 					</p>
 					<h5 class="centered">Bienvenue XXX</h5>
 					<h5 class="centered">(Profil Gestionnaire)</h5>
-					<li class="mt"><a class="active" href="gestionnaire.html"> <i
+					<li class="mt"><a href="gestionnaire.html"> <i
 							class="fa fa-home"></i> <span>Accueil</span>
 					</a></li>
 					<li class="sub-menu"><a href="javascript:;"> <i
@@ -76,7 +76,8 @@
 							class="fa fa-wrench"></i> <span>Modifier une formation</span>
 					</a>
 						<ul class="sub">
-							<li><a href="liste_modif_form_java.html">Formations Java </a></li>
+							<li><a href="liste_modif_form_java.html">Formations Java
+							</a></li>
 							<li><a href="liste_modif_form_hotellerie.html">Formations
 									Hotellerie</a></li>
 							<li><a href="liste_modif_form_business.html">Formations
@@ -86,7 +87,8 @@
 							class="fa fa-calendar"></i> <span>Consultation Plannings</span>
 					</a>
 						<ul class="sub">
-							<li><a href="formation_plannings_gest.html">Formations Java </a></li>
+							<li><a href="formation_plannings_gest.html">Formations
+									Java </a></li>
 							<li><a href="formation_plannings_gest.html">Formations
 									Hotellerie</a></li>
 							<li><a href="formation_plannings_gest.html">Formations
@@ -255,9 +257,11 @@
 							</table>
 							<br>
 							<div class="col-sm-10">
-								<span class="btn btn-success fileinput-button"> <i
-									class="glyphicon glyphicon-plus"></i>
+								<a href="majMatiere.html"> <span
+									class="btn btn-success fileinput-button"> <i
+										class="glyphicon glyphicon-plus"></i>
 								</span>
+								</a>
 							</div>
 							<button type="submit" class="btn btn-theme">Valider</button>
 							<br> <br> <br>
@@ -330,16 +334,15 @@
 
 								</tbody>
 							</table>
-							<!-- 							<br> -->
-							<!-- 							<div class="col-sm-10"> -->
-							<!-- 								<span class="btn btn-success fileinput-button"> <i -->
-							<!-- 									class="glyphicon glyphicon-plus"></i> -->
-							<!-- 								</span> -->
+														
 							<br>
 							<div class="col-sm-10">
-								<span class="btn btn-success fileinput-button"> <i
-									class="glyphicon glyphicon-plus"></i>
+								<a href="info_persos_gest_form.html"> <span
+									class="btn btn-success fileinput-button"> <i
+										class="glyphicon glyphicon-plus"></i>
 								</span>
+								</a>
+
 							</div>
 							<button type="submit" class="btn btn-theme">Valider</button>
 							<br> <br> <br>
@@ -485,11 +488,13 @@
 								</span>
 							</div>
 							<button type="submit" class="btn btn-theme">Valider</button>
-							<br>	<br>	<br>             <button type="button" class="btn btn-success">Confirmer</button>
+							<br> <br> <br> 
+							<a href="gestionnaire.html">
+							<button type="button" class="btn btn-success">Confirmer</button> </a>
 						</div>
 
 					</div>
-				
+
 					<!-- /content-panel -->
 				</div>
 				<!-- /col-md-12 -->
@@ -518,6 +523,8 @@
 	<script type="application/javascript">
 		
 		
+		
+		
     $(document).ready(function() {
       $("#date-popover").popover({
         html: true,
@@ -536,6 +543,8 @@
       console.log('nav ' + nav + ' to: ' + to.month + '/' + to.year);
     }
   
+	
+	
 	
 	
 	
