@@ -45,22 +45,20 @@
 		<!-- **********************************************************************************************************************************************************
         MAIN SIDEBAR MENU
         *********************************************************************************************************************************************************** -->
-			<!--sidebar start-->
+		<!--sidebar start-->
 		<aside>
 			<div id="sidebar" class="nav-collapse ">
 				<!-- sidebar menu start-->
 				<ul class="sidebar-menu" id="nav-accordion">
-					<p class="centered">
-						<a href="profile.html"><img src="img/user.png"
-							class="img-circle" width="80"></a>
-					</p>
+					<li class="centered"><img src="img/user.png"
+						class="img-circle" width="80"></li>
 					<h5 class="centered">Bienvenue XXX</h5>
 					<h5 class="centered">(Profil Gestionnaire)</h5>
 					<li class="mt"><a href="gestionnaire.html"> <i
 							class="fa fa-home"></i> <span>Accueil</span>
 					</a></li>
-					<li class="sub-menu"><a href="javascript:;"> <i
-							class="fa fa-edit"></i> <span>Mise à jour profil</span>
+					<li class="sub-menu"><a class="active" href="javascript:;">
+							<i class="fa fa-edit"></i> <span>Mise à jour profil</span>
 					</a>
 						<ul class="sub">
 							<li><a href="info_persos_gest.html">Informations
@@ -189,25 +187,27 @@
 									</div>
 								</div>
 								<br> <span class="form-group"> <label
-									class="col-sm-2 col-sm-2 control-label">Formation suivie</label>
+									class="col-sm-2 col-sm-2 control-label">Formation
+										suivie</label>
 								</span>
 								<div class="form-group">
 									<label class="col-sm-2 col-sm-2 control-label">Formation</label>
 									<select>
-											<option value="JAVA EE">JAVA EE</option>
-											<option value="Management">Management</option>
-											<option value="Hotellerie">Hotellerie</option>
-											<option value="Business Analyst">Business Analyst</option>
-										</select>
+										<option value="JAVA EE">JAVA EE</option>
+										<option value="Management">Management</option>
+										<option value="Hotellerie">Hotellerie</option>
+										<option value="Business Analyst">Business Analyst</option>
+									</select>
 								</div>
-						</div>
-						<br>
-							<div>
-							<a href="modif_formations.html"><button type="button"
-									class="btn btn-success">Confirmer</button> </a>
 
+								<br>
+								<div>
+									<a href="modif_formations.html"><button type="button"
+											class="btn btn-success">Confirmer</button> </a>
+
+								</div>
+							</form>
 						</div>
-						
 					</div>
 				</div>
 			</section>
@@ -254,6 +254,7 @@
 		
 		
 		
+		
     $(document).ready(function() {
       $("#date-popover").popover({
         html: true,
@@ -272,6 +273,7 @@
       console.log('nav ' + nav + ' to: ' + to.month + '/' + to.year);
     }
   
+	
 	
 	
 	

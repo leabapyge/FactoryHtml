@@ -50,16 +50,14 @@
 			<div id="sidebar" class="nav-collapse ">
 				<!-- sidebar menu start-->
 				<ul class="sidebar-menu" id="nav-accordion">
-					<p class="centered">
-						<a href="profile.html"><img src="img/user.png"
-							class="img-circle" width="80"></a>
-					</p>
+					<li class="centered"><img src="img/user.png"
+						class="img-circle" width="80"></li>
 					<h5 class="centered">Bienvenue XXX</h5>
 					<h5 class="centered">(Profil Formateur)</h5>
-					<li class="mt"><a href="formateur.html"> <i
+					<li class="mt"><a s href="formateur.html"> <i
 							class="fa fa-home"></i> <span>Accueil</span>
 					</a></li>
-					<li class="sub-menu"><a href="javascript:;"> <i
+					<li class="sub-menu"><a class="active" href="javascript:;"> <i
 							class="fa fa-edit"></i> <span>Mise à jour profil</span>
 					</a>
 						<ul class="sub">
@@ -77,7 +75,8 @@
 							class="fa fa-calendar"></i> <span>Planning</span>
 					</a>
 						<ul class="sub">
-							<li><a href="formation_plannings_form.html">Affichage planning</a></li>
+							<li><a href="formation_plannings_form.html">Affichage
+									planning</a></li>
 						</ul></li>
 
 				</ul>
@@ -175,12 +174,14 @@
 										<input type="text" class="form-control" placeholder="email">
 									</div>
 								</div>
+
+								<br>
+								<div>
+									<a href="formateur.html">
+										<button type="button" class="btn btn-theme">Valider</button>
+									</a>		</div>
+							</form>
 						</div>
-						<br>
-						<div>
-						<a href="formateur.html">
-						<button type="button" class="btn btn-theme">Valider</button> </a>
-						</form>
 					</div>
 				</div>
 			</section>
@@ -227,6 +228,9 @@
 		
 		
 		
+		
+		
+		
     $(document).ready(function() {
       $("#date-popover").popover({
         html: true,
@@ -245,6 +249,9 @@
       console.log('nav ' + nav + ' to: ' + to.month + '/' + to.year);
     }
   
+	
+	
+	
 	
 	
 	
