@@ -70,8 +70,8 @@
 							<li><a href="info_persos_tech.html">Informations
 									personelles</a></li>
 						</ul></li>
-					<li class="sub-menu"><a href="javascript:;"> <i
-							class="fa fa-wrench"></i> <span>Gestion du materiel</span>
+					<li class="sub-menu"><a class="active" href="javascript:;">
+							<i class="fa fa-wrench"></i> <span>Gestion du materiel</span>
 					</a>
 						<ul class="sub">
 							<li><a href="salle.html">Salles</a></li>
@@ -105,8 +105,111 @@
 			<section class="wrapper">
 				<h3>Gestion des Vidéoprojecteurs</h3>
 				<!-- BASIC FORM ELELEMNTS -->
+
 				<div class="row mt">
-					<div class="col-lg-12">
+					<div class="col-md-12">
+						<div class="form-panel">
+							<table class="table table-striped table-advance table-hover">
+								<h4>Liste des Vidéoprojecteurs</h4>
+								<thead>
+									<tr>
+										<th><i class="fa fa-video-camera"></i> Code
+											Vidéoprojecteurs</th>
+										<th><i class="fa fa-map-marker"></i> Localisation</th>
+										<th><i class="fa fa-columns"></i>Disponibilité</th>
+										<!-- 										<th><i>edit</i></th> -->
+
+										<th></th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>3540S</td>
+										<td><select>
+												<option value="Salle Topaze">Topaze</option>
+												<option value="Salle Opale">Opale</option>
+												<option value="Salle Bobby">Rubis</option>
+												<option value="Salle Henry">Saphir</option>
+										</select> <span><button class="btn btn-primary btn-xs">
+													<i class="fa fa-pencil"></i>
+												</button></span></td>
+										<td>
+											<div class="switch switch-square"
+												data-on-label="<i class=' fa fa-check'></i>"
+												data-off-label="<i class='fa fa-times'></i>">
+												<input type="checkbox" />
+											</div>
+										</td>
+										<td>
+											<button class="btn btn-primary btn-xs">
+												<i class="fa fa-pencil"></i>
+											</button>
+											<button class="btn btn-danger btn-xs">
+												<i class="fa fa-trash-o "></i>
+											</button>
+										</td>
+									</tr>
+									<tr>
+										<td>3586J</td>
+										<td><select>
+												<option value="Salle Topaze">Topaze</option>
+												<option value="Salle Opale">Opale</option>
+												<option value="Salle Bobby">Rubis</option>
+												<option value="Salle Henry">Saphir</option>
+										</select> <span><button class="btn btn-primary btn-xs">
+													<i class="fa fa-pencil"></i>
+												</button></span></td>
+										<td>
+											<div class="switch switch-square"
+												data-on-label="<i class=' fa fa-check'></i>"
+												data-off-label="<i class='fa fa-times'></i>">
+												<input type="checkbox" />
+											</div>
+										</td>
+										<td>
+											<button class="btn btn-primary btn-xs">
+												<i class="fa fa-pencil"></i>
+											</button>
+											<button class="btn btn-danger btn-xs">
+												<i class="fa fa-trash-o "></i>
+											</button>
+										</td>
+									</tr>
+									<tr>
+										<td>3182SR</td>
+										<td><select>
+												<option value="Salle Topaze">Topaze</option>
+												<option value="Salle Opale">Opale</option>
+												<option value="Salle Bobby">Rubis</option>
+												<option value="Salle Henry">Saphir</option>
+										</select> <span><button class="btn btn-primary btn-xs">
+													<i class="fa fa-pencil"></i>
+												</button></span></td>
+										<td>
+											<div class="switch switch-square"
+												data-on-label="<i class=' fa fa-check'></i>"
+												data-off-label="<i class='fa fa-times'></i>">
+												<input type="checkbox" />
+											</div>
+										</td>
+										<td>
+											<button class="btn btn-primary btn-xs">
+												<i class="fa fa-pencil"></i>
+											</button>
+											<button class="btn btn-danger btn-xs">
+												<i class="fa fa-trash-o "></i>
+											</button>
+										</td>
+									</tr>
+
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+
+				<div class="row mt">
+					<div class="col-md-12">
 						<div class="form-panel">
 							<h4 class="mb">Ajouter un vidéoprojecteur</h4>
 
@@ -115,138 +218,14 @@
 									<input type="text" class="form-control">
 								</span>
 							</div>
-<!-- 							<div class="col-sm-10"> -->
-								<span class="btn btn-success fileinput-button"> <i
-									class="glyphicon glyphicon-plus"></i>
-								</span>
-
-<!-- 							</div> -->
+							<!-- 							<div class="col-sm-10"> -->
+							<span class="btn btn-success fileinput-button"> <i
+								class="glyphicon glyphicon-plus"></i>
+							</span>
 						</div>
 					</div>
 				</div>
-				<!-- col-lg-12-->
-	<!-- /row -->
-				<!-- INPUT MESSAGES -->
-				<div class="row mt">
-					<div class="col-md-12">
-						<div class="content-panel">
-							<table class="table table-striped table-advance table-hover">
-								<h4>Liste des Vidéoprojecteurs</h4>
-								<thead>
-									<tr>
-										<th><i class="fa fa-video-camera"></i> Code
-											Vidéoprojecteurs</th>
-										<th><i>edit</i></th>
-										<th><i class="fa fa-map-marker"></i> Localisation</th>
-										<th><i class="fa fa-columns"></i>Disponibilité</th>
-
-										<th></th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>3540S
-										</td>
-										<td>
-										<button class="btn btn-primary btn-xs">
-													<i class="fa fa-pencil"></i>
-											</button>
-										</td>
-										
-										<td><select>
-												<option value="Salle Topaze">Topaze</option>
-												<option value="Salle Opale">Opale</option>
-												<option value="Salle Bobby">Bobby</option>
-												<option value="Salle Henry">Henry</option>
-										</select> <span><button class="btn btn-primary btn-xs">
-													<i class="fa fa-pencil"></i>
-											</button></span></td>
-										<td>
-<!-- 											<div class="row mt"> -->
-<!-- 												<div class="col-sm-6 text-center"> -->
-													<div class="switch switch-square"
-														data-on-label="<i class=' fa fa-check'></i>"
-														data-off-label="<i class='fa fa-times'></i>">
-														<input type="checkbox" />
-													</div>
-<!-- 												</div> -->
-
-<!-- 											</div> -->
-										</td>
-									</tr>
-									<tr>
-										<td>3586J</td>
-										<td>
-										<button class="btn btn-primary btn-xs">
-													<i class="fa fa-pencil"></i>
-											</button>
-										</td>
-										
-										<td><select>
-												<option value="Salle Topaze">Topaze</option>
-												<option value="Salle Opale">Opale</option>
-												<option value="Salle Bobby">Bobby</option>
-												<option value="Salle Henry">Henry</option>
-										</select> <span><button class="btn btn-primary btn-xs">
-													<i class="fa fa-pencil"></i>
-											</button></span></td>
-										<td>
-<!-- 											<div class="row mt"> -->
-<!-- 												<div class="col-sm-6 text-center"> -->
-													<div class="switch switch-square"
-														data-on-label="<i class=' fa fa-check'></i>"
-														data-off-label="<i class='fa fa-times'></i>">
-														<input type="checkbox" />
-													</div>
-<!-- 												</div> -->
-
-<!-- 											</div> -->
-										</td>
-									</tr>
-									<tr>
-										<td>3182SR</td>
-										<td><button class="btn btn-primary btn-xs">
-													<i class="fa fa-pencil"></i>
-											</button>
-										</td>
-										<td><select>
-												<option value="Salle Topaze">Topaze</option>
-												<option value="Salle Opale">Opale</option>
-												<option value="Salle Bobby">Bobby</option>
-												<option value="Salle Henry">Henry</option>
-										</select> <span><button class="btn btn-primary btn-xs">
-													<i class="fa fa-pencil"></i>
-											</button></span></td>
-										<td>
-<!-- 											<div class="row mt"> -->
-<!-- 												<div class="col-sm-6 text-center"> -->
-													<div class="switch switch-square"
-														data-on-label="<i class=' fa fa-check'></i>"
-														data-off-label="<i class='fa fa-times'></i>">
-														<input type="checkbox" />
-													</div>
-<!-- 												</div> -->
-
-<!-- 											</div> -->
-										</td>
-
-									</tr>
-								</tbody>
-							</table>
-						</div>
-						<!-- /content-panel -->
-					</div>
-					<!-- /col-md-12 -->
-				</div>
-				<div class="row mt">
-
-					<!-- /col-lg-12 -->
-					<!-- CUSTOM TOGGLES -->
-
-				</div>
-				<!-- /row -->
 			</section>
-			<!-- /wrapper -->
 		</section>
 		<!-- /MAIN CONTENT -->
 		<!--main content end-->
