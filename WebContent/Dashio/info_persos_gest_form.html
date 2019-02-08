@@ -55,7 +55,7 @@
 							class="img-circle" width="80"></a>
 					</p>
 					<h5 class="centered">Bienvenue XXX</h5>
-					<h5 class="centered">(Profil Gestioninaire)</h5>
+					<h5 class="centered">(Profil Gestionnaire)</h5>
 					<li class="mt"><a href="gestionnaire.html"> <i
 							class="fa fa-home"></i> <span>Accueil</span>
 					</a></li>
@@ -63,25 +63,38 @@
 							class="fa fa-edit"></i> <span>Mise à jour profil</span>
 					</a>
 						<ul class="sub">
-							<li><a href="info_persos_form.html">Informations
+							<li><a href="info_persos_gest.html">Informations
 									personelles</a></li>
-							<li><a href="matieres.html">Matières</a></li>
 						</ul></li>
 					<li class="sub-menu"><a href="javascript:;"> <i
-							class="fa fa-calendar-o"></i> <span>Disponibilités</span>
+							class="fa fa-wrench"></i> <span>Ajouter une formation</span>
 					</a>
 						<ul class="sub">
-							<li><a href="disponibilites.html">Mise à jour</a></li>
+							<li><a href="new_formation.html">Ajout</a></li>
 						</ul></li>
 					<li class="sub-menu"><a href="javascript:;"> <i
-							class="fa fa-calendar"></i> <span>Planning</span>
+							class="fa fa-wrench"></i> <span>Modifier une formation</span>
 					</a>
 						<ul class="sub">
-							<li><a href="formation_plannings_form.html">Affichage planning</a></li>
+							<li><a href="liste_modif_form_java.html">Formations Java
+							</a></li>
+							<li><a href="liste_modif_form_hotellerie.html">Formations
+									Hotellerie</a></li>
+							<li><a href="liste_modif_form_business.html">Formations
+									Business</a></li>
 						</ul></li>
-
+					<li class="sub-menu"><a href="javascript:;"> <i
+							class="fa fa-calendar"></i> <span>Consultation Plannings</span>
+					</a>
+						<ul class="sub">
+							<li><a href="formation_plannings_gest.html">Formations
+									Java </a></li>
+							<li><a href="formation_plannings_gest.html">Formations
+									Hotellerie</a></li>
+							<li><a href="formation_plannings_gest.html">Formations
+									Business</a></li>
+						</ul></li>
 				</ul>
-
 				<!-- sidebar menu end-->
 			</div>
 		</aside>
@@ -177,10 +190,12 @@
 								</div>
 						</div>
 						<br>
-						<a href="modif_formations.html">
-						<button type="submit" class="btn btn-theme">Valider</button>
-						</a>
-						
+						<div>
+							<a href="modif_formations.html"><button type="button"
+									class="btn btn-success">Confirmer</button> </a>
+
+						</div>
+
 					</div>
 				</div>
 			</section>
@@ -227,6 +242,7 @@
 		
 		
 		
+		
     $(document).ready(function() {
       $("#date-popover").popover({
         html: true,
@@ -245,6 +261,7 @@
       console.log('nav ' + nav + ' to: ' + to.month + '/' + to.year);
     }
   
+	
 	
 	
 	

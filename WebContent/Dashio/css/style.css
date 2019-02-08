@@ -1211,6 +1211,7 @@ PANELS CONFIGURATIONS
 }
 .message-p .form-inline .form-group {
 	width: 80%;
+}
 .message-p .form-inline .form-control {
 	width: 100%
 }
@@ -1620,6 +1621,11 @@ PANELS CONFIGURATIONS
 	margin-right: 8px;
 }
 
+/* Grid Showcase*/
+
+	margin-bottom: 15px;
+}
+
 .show-grid [class^=col-] {
 	padding-top: 10px;
 	padding-bottom: 10px;
@@ -1942,11 +1948,11 @@ ul li {
 
 /*LOGIN CONFIGURATION PAGE*/
 .form-login {
-    max-width: 450px;
-    margin: 150px auto 0;
-    background: #fff;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
+	max-width: 450px;
+	margin: 150px auto 0;
+	background: #fff;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
 }
 
 .form-login h2.form-login-heading {
