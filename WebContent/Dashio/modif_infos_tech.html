@@ -8,7 +8,7 @@
 <meta name="author" content="Dashboard">
 <meta name="keyword"
 	content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
-<title>Factory-Administrateur-modif tech</title>
+<title>Factory-Administrateur-modif form</title>
 
 <!-- Favicons -->
 <link href="img/favicon.png" rel="icon">
@@ -50,14 +50,12 @@
 			<div id="sidebar" class="nav-collapse ">
 				<!-- sidebar menu start-->
 				<ul class="sidebar-menu" id="nav-accordion">
-					<p class="centered">
-						<a href="profile.html"><img src="img/user.png"
-							class="img-circle" width="80"></a>
-					</p>
+					<li class="centered"><img src="img/user.png"
+						class="img-circle" width="80"></li>
 					<h5 class="centered">Bienvenue XXX</h5>
 					<h5 class="centered">(Profil Admnistrateur)</h5>
-					<li class="mt"><a href="gestionnaire.html">
-							<i class="fa fa-home"></i> <span>Accueil</span>
+					<li class="mt"><a href="gestionnaire.html"> <i
+							class="fa fa-home"></i> <span>Accueil</span>
 					</a></li>
 					<li class="sub-menu"><a href="javascript:;"> <i
 							class="fa fa-file-text-o"></i> <span>Inscriptions</span>
@@ -68,8 +66,8 @@
 							<li><a href="inscription_gest.html">Gestionnaire</a></li>
 							<li><a href="inscription_stag.html">Stagiaire</a></li>
 						</ul></li>
-					<li class="sub-menu"><a class="active" href="javascript:;"> <i
-							class="fa fa-users"></i> <span>Gestion RH</span>
+					<li class="sub-menu"><a class="active" href="javascript:;">
+							<i class="fa fa-users"></i> <span>Gestion RH</span>
 					</a>
 						<ul class="sub">
 							<li><a href="modif_infos_form.html">Formateur</a></li>
@@ -89,15 +87,16 @@
 								formation/matière</span>
 					</a>
 						<ul class="sub">
-							<li><a href="new_formation_admin.html">Nouvelle formation</a></li>
+							<li><a href="new_formation_admin.html">Nouvelle
+									formation</a></li>
 							<li><a href="new_matiere_admin.html">Nouvelle matière</a></li>
 						</ul></li>
 					<li class="sub-menu"><a href="javascript:;"> <i
 							class="fa fa-edit"></i> <span>Modifier une formation</span>
 					</a>
 						<ul class="sub">
-							<li><a href="liste_modif_form_java_admin.html">Formations Java
-							</a></li>
+							<li><a href="liste_modif_form_java_admin.html">Formations
+									Java </a></li>
 							<li><a href="liste_modif_form_hotellerie_admin.html">Formations
 									Hotellerie</a></li>
 							<li><a href="liste_modif_form_business_admin.html">Formations
@@ -130,7 +129,7 @@
 		<!-- **********************************************************************************************************************************************************
         MAIN CONTENT
         *********************************************************************************************************************************************************** -->
-	<!--main content start-->
+		<!--main content start-->
 		<section id="main-content">
 			<section class="wrapper">
 				<div class="row">
@@ -216,10 +215,10 @@
 										<input type="text" class="form-control" placeholder="email">
 									</div>
 								</div>
+								<br>
+								<button type="submit" class="btn btn-theme">Valider</button>
+							</form>
 						</div>
-						<br>
-						<button type="submit" class="btn btn-theme">Valider</button>
-						</form>
 					</div>
 				</div>
 			</section>
@@ -244,6 +243,7 @@
 	<script src="lib/zabuto_calendar.js"></script>
 	<script type="application/javascript">
 		
+		
     $(document).ready(function() {
       $("#date-popover").popover({
         html: true,
@@ -262,6 +262,7 @@
       console.log('nav ' + nav + ' to: ' + to.month + '/' + to.year);
     }
  
+	
 	</script>
 </body>
 

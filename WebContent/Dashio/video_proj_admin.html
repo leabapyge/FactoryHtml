@@ -8,7 +8,7 @@
 <meta name="author" content="Dashboard">
 <meta name="keyword"
 	content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
-<title>Factory-Administrateur</title>
+<title>Factory-Admin-gestion video proj</title>
 
 <!-- Favicons -->
 <link href="img/favicon.png" rel="icon">
@@ -50,14 +50,12 @@
 			<div id="sidebar" class="nav-collapse ">
 				<!-- sidebar menu start-->
 				<ul class="sidebar-menu" id="nav-accordion">
-					<p class="centered">
-						<a href="profile.html"><img src="img/user.png"
-							class="img-circle" width="80"></a>
-					</p>
+					<li class="centered"><img src="img/user.png"
+						class="img-circle" width="80"></li>
 					<h5 class="centered">Bienvenue XXX</h5>
 					<h5 class="centered">(Profil Admnistrateur)</h5>
-					<li class="mt"><a href="administrateur.html">
-							<i class="fa fa-home"></i> <span>Accueil</span>
+					<li class="mt"><a href="administrateur.html"> <i
+							class="fa fa-home"></i> <span>Accueil</span>
 					</a></li>
 					<li class="sub-menu"><a href="javascript:;"> <i
 							class="fa fa-file-text-o"></i> <span>Inscriptions</span>
@@ -71,7 +69,7 @@
 					<li class="sub-menu"><a href="javascript:;"> <i
 							class="fa fa-users"></i> <span>Gestion RH</span>
 					</a>
-					<ul class="sub">
+						<ul class="sub">
 							<li><a href="liste_formateur.html">Formateur</a></li>
 							<li><a href="liste_tech.html">Technicien</a></li>
 							<li><a href="liste_gest.html">Gestionnaire</a></li>
@@ -90,22 +88,23 @@
 								formation/matière</span>
 					</a>
 						<ul class="sub">
-							<li><a href="new_formation_admin.html">Nouvelle formation</a></li>
+							<li><a href="new_formation_admin.html">Nouvelle
+									formation</a></li>
 							<li><a href="new_matiere_admin.html">Nouvelle matière</a></li>
 						</ul></li>
 					<li class="sub-menu"><a href="javascript:;"> <i
 							class="fa fa-edit"></i> <span>Modifier une formation</span>
 					</a>
 						<ul class="sub">
-							<li><a href="liste_modif_form_java_admin.html">Formations Java
-							</a></li>
+							<li><a href="liste_modif_form_java_admin.html">Formations
+									Java </a></li>
 							<li><a href="liste_modif_form_hotellerie_admin.html">Formations
 									Hotellerie</a></li>
 							<li><a href="liste_modif_form_business_admin.html">Formations
 									Business</a></li>
 						</ul></li>
-					<li class="sub-menu"><a class="active"  href="javascript:;"> <i
-							class="fa fa-wrench"></i> <span>Gestion du materiel</span>
+					<li class="sub-menu"><a class="active" href="javascript:;">
+							<i class="fa fa-wrench"></i> <span>Gestion du materiel</span>
 					</a>
 						<ul class="sub">
 							<li><a href="salle_admin.html">Salles</a></li>
@@ -131,7 +130,7 @@
 		<!-- **********************************************************************************************************************************************************
         MAIN CONTENT
         *********************************************************************************************************************************************************** -->
-		<!--main content start-->
+	<!--main content start-->
 		<section id="main-content">
 			<section class="wrapper">
 				<h3>Gestion des Vidéoprojecteurs</h3>
@@ -142,39 +141,32 @@
 							<h4 class="mb">Ajouter un vidéoprojecteur</h4>
 
 							<div class="form-group">
-								<label class="col-sm-2 col-sm-2 control-label">Code</label>
-								<span>
+								<label class="col-sm-2 col-sm-2 control-label">Code</label> <span>
 									<input type="text" class="form-control">
 								</span>
 							</div>
-							<div class="col-sm-10">
+<!-- 							<div class="col-sm-10"> -->
 								<span class="btn btn-success fileinput-button"> <i
 									class="glyphicon glyphicon-plus"></i>
 								</span>
 
-							</div>
+<!-- 							</div> -->
 						</div>
-
-
-						</form>
 					</div>
 				</div>
 				<!-- col-lg-12-->
-				</div>
-				<!-- /row -->
-
-
-				<!-- /row -->
+	<!-- /row -->
 				<!-- INPUT MESSAGES -->
 				<div class="row mt">
 					<div class="col-md-12">
 						<div class="content-panel">
 							<table class="table table-striped table-advance table-hover">
 								<h4>Liste des Vidéoprojecteurs</h4>
-								<hr>
 								<thead>
 									<tr>
-										<th><i class="fa fa-video-camera"></i> Code Vidéoprojecteurs</th>
+										<th><i class="fa fa-video-camera"></i> Code
+											Vidéoprojecteurs</th>
+										<th><i>edit</i></th>
 										<th><i class="fa fa-map-marker"></i> Localisation</th>
 										<th><i class="fa fa-columns"></i>Disponibilité</th>
 
@@ -183,81 +175,89 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td><a href="basic_table.html#">3540S</a>
-										<span><button class="btn btn-primary btn-xs">
-													<i class="fa fa-pencil"></i></span>
-											</button></td>
+										<td>3540S
+										</td>
+										<td>
+										<button class="btn btn-primary btn-xs">
+													<i class="fa fa-pencil"></i>
+											</button>
+										</td>
+										
 										<td><select>
 												<option value="Salle Topaze">Topaze</option>
 												<option value="Salle Opale">Opale</option>
 												<option value="Salle Bobby">Bobby</option>
 												<option value="Salle Henry">Henry</option>
 										</select> <span><button class="btn btn-primary btn-xs">
-													<i class="fa fa-pencil"></i></span>
-											</button></td>
+													<i class="fa fa-pencil"></i>
+											</button></span></td>
 										<td>
-											<div class="row mt">
-												<div class="col-sm-6 text-center">
+<!-- 											<div class="row mt"> -->
+<!-- 												<div class="col-sm-6 text-center"> -->
 													<div class="switch switch-square"
 														data-on-label="<i class=' fa fa-check'></i>"
 														data-off-label="<i class='fa fa-times'></i>">
 														<input type="checkbox" />
 													</div>
-												</div>
+<!-- 												</div> -->
 
-											</div>
+<!-- 											</div> -->
 										</td>
 									</tr>
 									<tr>
-										<td><a href="basic_table.html#">3148PA </a>
-										<span><button class="btn btn-primary btn-xs">
-													<i class="fa fa-pencil"></i></span>
-											</button></td>
+										<td>3586J</td>
+										<td>
+										<button class="btn btn-primary btn-xs">
+													<i class="fa fa-pencil"></i>
+											</button>
+										</td>
+										
 										<td><select>
 												<option value="Salle Topaze">Topaze</option>
 												<option value="Salle Opale">Opale</option>
 												<option value="Salle Bobby">Bobby</option>
 												<option value="Salle Henry">Henry</option>
 										</select> <span><button class="btn btn-primary btn-xs">
-													<i class="fa fa-pencil"></i></span>
-											</button></td>
+													<i class="fa fa-pencil"></i>
+											</button></span></td>
 										<td>
-											<div class="row mt">
-												<div class="col-sm-6 text-center">
+<!-- 											<div class="row mt"> -->
+<!-- 												<div class="col-sm-6 text-center"> -->
 													<div class="switch switch-square"
 														data-on-label="<i class=' fa fa-check'></i>"
 														data-off-label="<i class='fa fa-times'></i>">
 														<input type="checkbox" />
 													</div>
-												</div>
+<!-- 												</div> -->
 
-											</div>
+<!-- 											</div> -->
 										</td>
 									</tr>
 									<tr>
-										<td><a href="basic_table.html#">3182SR</a>
-										<span><button class="btn btn-primary btn-xs">
-													<i class="fa fa-pencil"></i></span>
-											</button></td>
+										<td>3182SR</td>
+										<td><button class="btn btn-primary btn-xs">
+													<i class="fa fa-pencil"></i>
+											</button>
+										</td>
 										<td><select>
 												<option value="Salle Topaze">Topaze</option>
 												<option value="Salle Opale">Opale</option>
 												<option value="Salle Bobby">Bobby</option>
 												<option value="Salle Henry">Henry</option>
 										</select> <span><button class="btn btn-primary btn-xs">
-													<i class="fa fa-pencil"></i></span>
-											</button></td>
+													<i class="fa fa-pencil"></i>
+											</button></span></td>
 										<td>
-											<div class="row mt">
-												<div class="col-sm-6 text-center">
+<!-- 											<div class="row mt"> -->
+<!-- 												<div class="col-sm-6 text-center"> -->
 													<div class="switch switch-square"
 														data-on-label="<i class=' fa fa-check'></i>"
 														data-off-label="<i class='fa fa-times'></i>">
 														<input type="checkbox" />
 													</div>
-												</div>
+<!-- 												</div> -->
 
-											</div>
+<!-- 											</div> -->
 										</td>
 
 									</tr>

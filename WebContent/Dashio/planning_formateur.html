@@ -8,7 +8,7 @@
 <meta name="author" content="Dashboard">
 <meta name="keyword"
 	content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
-<title>The Factory - planning</title>
+<title>The Factory - planning formateur</title>
 
 <!-- Favicons -->
 <link href="img/favicon.png" rel="icon">
@@ -52,12 +52,10 @@
 			<div id="sidebar" class="nav-collapse ">
 				<!-- sidebar menu start-->
 				<ul class="sidebar-menu" id="nav-accordion">
-					<p class="centered">
-						<a href="profile.html"><img src="img/user.png"
-							class="img-circle" width="80"></a>
-					</p>
+					<li class="centered"><img src="img/user.png"
+						class="img-circle" width="80"></li>
 					<h5 class="centered">Bienvenue XXX</h5>
-							<h5 class="centered">(Profil Formateur)</h5>
+					<h5 class="centered">(Profil Formateur)</h5>
 					<li class="mt"><a href="formateur.html"> <i
 							class="fa fa-home"></i> <span>Accueil</span>
 					</a></li>
@@ -75,8 +73,8 @@
 						<ul class="sub">
 							<li><a href="disponibilites.html">Mise à jour</a></li>
 						</ul></li>
-					<li class="sub-menu"><a href="javascript:;"> <i
-							class="fa fa-calendar"></i> <span>Planning</span>
+					<li class="sub-menu"><a class="active" href="javascript:;">
+							<i class="fa fa-calendar"></i> <span>Planning</span>
 					</a>
 						<ul class="sub">
 							<li><a href="planning_formateur.html">Affichage planning</a></li>
@@ -94,62 +92,63 @@
 
 	</section>
 	<!--main content start-->
-		<section id="main-content">
-			<section class="wrapper">
-				<h3>Planning</h3>
-				<!-- page start-->
-				<div class="row mt">
-					<aside class="col-lg-3 mt">
-						<h4>Nouveaux Cours</h4>
-						<div id="external-events">
-							<div class="external-event label label-theme">Cours 1</div>
-							<div class="external-event label label-success">Cours 2</div>
-							<div class="external-event label label-info">Cours 3</div>
-							<div class="external-event label label-warning">Cours 4</div>
-							<div class="external-event label label-danger">Cours 5</div>
-							<div class="external-event label label-default">Cours 6</div>
-							<div class="external-event label label-theme">Cours 7</div>
-							<div class="external-event label label-info">Cours 8</div>
-							<div class="external-event label label-info">Cours 9</div>
-							<p class="drop-after">
-								<input type="checkbox" id="drop-remove"> Enlever de la
-								liste après ajout au calendrier
-							</p>
+	<section id="main-content">
+		<section class="wrapper">
+			<h3>Planning</h3>
+			<!-- page start-->
+			<div class="row mt">
+				<aside class="col-lg-3 mt">
+					<h4>Nouveaux Cours</h4>
+					<div id="external-events">
+						<div class="external-event label label-theme">Cours 1</div>
+						<div class="external-event label label-success">Cours 2</div>
+						<div class="external-event label label-info">Cours 3</div>
+						<div class="external-event label label-warning">Cours 4</div>
+						<div class="external-event label label-danger">Cours 5</div>
+						<div class="external-event label label-default">Cours 6</div>
+						<div class="external-event label label-theme">Cours 7</div>
+						<div class="external-event label label-info">Cours 8</div>
+						<div class="external-event label label-info">Cours 9</div>
+						<p class="drop-after">
+							<input type="checkbox" id="drop-remove"> Enlever de la
+							liste après ajout au calendrier
+						</p>
+					</div>
+				</aside>
+				<aside class="col-lg-9 mt">
+					<section class="panel">
+						<div class="panel-body">
+							<div id="calendar" class="has-toolbar"></div>
 						</div>
-					</aside>
-					<aside class="col-lg-9 mt">
-						<section class="panel">
-							<div class="panel-body">
-								<div id="calendar" class="has-toolbar"></div>
-							</div>
-						</section>
-					</aside>
-				</div>
-				<!-- page end-->
-			</section>
-			<!-- /wrapper -->
+					</section>
+				</aside>
+			</div>
+			<!-- page end-->
 		</section>
-		<!-- /MAIN CONTENT -->
-		<!--main content end-->
-
+		<!-- /wrapper -->
 	</section>
+	<!-- /MAIN CONTENT -->
+	<!--main content end-->
+
+
 	<!-- js placed at the end of the document so the pages load faster -->
+		<!-- js placed at the end of the document so the pages load faster -->
 	<script src="lib/jquery/jquery.min.js"></script>
-	<script src="lib/jquery-ui-1.9.2.custom.min.js"></script>
-	<script src="lib/fullcalendar/fullcalendar.min.js"></script>
+
 	<script src="lib/bootstrap/js/bootstrap.min.js"></script>
 	<script class="include" type="text/javascript"
 		src="lib/jquery.dcjqaccordion.2.7.js"></script>
 	<script src="lib/jquery.scrollTo.min.js"></script>
 	<script src="lib/jquery.nicescroll.js" type="text/javascript"></script>
+	<script src="lib/jquery.sparkline.js"></script>
 	<!--common script for all pages-->
 	<script src="lib/common-scripts.js"></script>
+	<script type="text/javascript" src="lib/gritter/js/jquery.gritter.js"></script>
+	<script type="text/javascript" src="lib/gritter-conf.js"></script>
 	<!--script for this page-->
-	<script src="lib/calendar-conf-events.js"></script>
-
-		
-	
-		
+	<script src="lib/sparkline-chart.js"></script>
+	<script src="lib/zabuto_calendar.js"></script>
+	<script type="application/javascript">
 		
     $(document).ready(function() {
       $("#date-popover").popover({
@@ -168,15 +167,7 @@
       var to = $("#" + id).data("to");
       console.log('nav ' + nav + ' to: ' + to.month + '/' + to.year);
     }
-  
-	
-	
-	
-	
-	
-	
-	
-	
+ 
 	</script>
 </body>
 
